@@ -3,7 +3,10 @@
     "id": 1,
     "title": "Inception",
     "year": 2010,
-    "genres": ["Sci-Fi", "Thriller"],
+    "genres": [
+      "Sci-Fi",
+      "Thriller"
+    ],
     "director": "Christopher Nolan",
     "rating": 8.8,
     "runtime": 148,
@@ -13,7 +16,9 @@
     "id": 2,
     "title": "The Shawshank Redemption",
     "year": 1994,
-    "genres": ["Drama"],
+    "genres": [
+      "Drama"
+    ],
     "director": "Frank Darabont",
     "rating": 9.3,
     "runtime": 142,
@@ -23,7 +28,11 @@
     "id": 3,
     "title": "The Dark Knight",
     "year": 2008,
-    "genres": ["Action", "Crime", "Drama"],
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
     "director": "Christopher Nolan",
     "rating": 9.0,
     "runtime": 152,
@@ -33,7 +42,10 @@
     "id": 4,
     "title": "Pulp Fiction",
     "year": 1994,
-    "genres": ["Crime", "Drama"],
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "director": "Quentin Tarantino",
     "rating": 8.9,
     "runtime": 154,
@@ -43,7 +55,10 @@
     "id": 5,
     "title": "Forrest Gump",
     "year": 1994,
-    "genres": ["Drama", "Romance"],
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
     "director": "Robert Zemeckis",
     "rating": 8.8,
     "runtime": 142,
@@ -53,7 +68,10 @@
     "id": 6,
     "title": "The Matrix",
     "year": 1999,
-    "genres": ["Sci-Fi", "Action"],
+    "genres": [
+      "Sci-Fi",
+      "Action"
+    ],
     "director": "Lana Wachowski, Lilly Wachowski",
     "rating": 8.7,
     "runtime": 136,
@@ -63,7 +81,11 @@
     "id": 7,
     "title": "Interstellar",
     "year": 2014,
-    "genres": ["Sci-Fi", "Drama", "Adventure"],
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Adventure"
+    ],
     "director": "Christopher Nolan",
     "rating": 8.6,
     "runtime": 169,
@@ -73,7 +95,10 @@
     "id": 8,
     "title": "Parasite",
     "year": 2019,
-    "genres": ["Drama", "Thriller"],
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
     "director": "Bong Joon-ho",
     "rating": 8.5,
     "runtime": 132,
@@ -83,7 +108,11 @@
     "id": 9,
     "title": "Spirited Away",
     "year": 2001,
-    "genres": ["Animation", "Fantasy", "Adventure"],
+    "genres": [
+      "Animation",
+      "Fantasy",
+      "Adventure"
+    ],
     "director": "Hayao Miyazaki",
     "rating": 8.6,
     "runtime": 125,
@@ -93,7 +122,10 @@
     "id": 10,
     "title": "The Grand Budapest Hotel",
     "year": 2014,
-    "genres": ["Comedy", "Drama"],
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "director": "Wes Anderson",
     "rating": 8.1,
     "runtime": 99,
@@ -103,7 +135,11 @@
     "id": 11,
     "title": "Get Out",
     "year": 2017,
-    "genres": ["Horror", "Mystery", "Thriller"],
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
     "director": "Jordan Peele",
     "rating": 7.7,
     "runtime": 104,
@@ -113,7 +149,11 @@
     "id": 12,
     "title": "La La Land",
     "year": 2016,
-    "genres": ["Romance", "Music", "Drama"],
+    "genres": [
+      "Romance",
+      "Music",
+      "Drama"
+    ],
     "director": "Damien Chazelle",
     "rating": 8.0,
     "runtime": 128,
@@ -123,7 +163,11 @@
     "id": 13,
     "title": "Mad Max: Fury Road",
     "year": 2015,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
     "director": "George Miller",
     "rating": 8.1,
     "runtime": 120,
@@ -133,7 +177,10 @@
     "id": 14,
     "title": "The Fellowship of the Ring",
     "year": 2001,
-    "genres": ["Fantasy", "Adventure"],
+    "genres": [
+      "Fantasy",
+      "Adventure"
+    ],
     "director": "Peter Jackson",
     "rating": 8.8,
     "runtime": 178,
@@ -143,7 +190,11 @@
     "id": 15,
     "title": "Toy Story",
     "year": 1995,
-    "genres": ["Animation", "Comedy", "Family"],
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Family"
+    ],
     "director": "John Lasseter",
     "rating": 8.3,
     "runtime": 81,
@@ -153,7 +204,11 @@
     "id": 16,
     "title": "Eternal Sunshine of the Spotless Mind",
     "year": 2004,
-    "genres": ["Romance", "Sci-Fi", "Drama"],
+    "genres": [
+      "Romance",
+      "Sci-Fi",
+      "Drama"
+    ],
     "director": "Michel Gondry",
     "rating": 8.3,
     "runtime": 108,
@@ -163,7 +218,10 @@
     "id": 17,
     "title": "Whiplash",
     "year": 2014,
-    "genres": ["Drama", "Music"],
+    "genres": [
+      "Drama",
+      "Music"
+    ],
     "director": "Damien Chazelle",
     "rating": 8.5,
     "runtime": 106,
@@ -173,7 +231,10 @@
     "id": 18,
     "title": "The Social Network",
     "year": 2010,
-    "genres": ["Drama", "Biography"],
+    "genres": [
+      "Drama",
+      "Biography"
+    ],
     "director": "David Fincher",
     "rating": 7.7,
     "runtime": 120,
@@ -183,7 +244,11 @@
     "id": 19,
     "title": "Knives Out",
     "year": 2019,
-    "genres": ["Comedy", "Mystery", "Thriller"],
+    "genres": [
+      "Comedy",
+      "Mystery",
+      "Thriller"
+    ],
     "director": "Rian Johnson",
     "rating": 7.9,
     "runtime": 130,
@@ -193,7 +258,11 @@
     "id": 20,
     "title": "Spider-Man: Into the Spider-Verse",
     "year": 2018,
-    "genres": ["Animation", "Action", "Adventure"],
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
     "director": "Bob Persichetti, Peter Ramsey, Rodney Rothman",
     "rating": 8.4,
     "runtime": 117,
@@ -203,7 +272,11 @@
     "id": 21,
     "title": "Coco",
     "year": 2017,
-    "genres": ["Animation", "Family", "Fantasy"],
+    "genres": [
+      "Animation",
+      "Family",
+      "Fantasy"
+    ],
     "director": "Lee Unkrich",
     "rating": 8.4,
     "runtime": 105,
@@ -213,7 +286,11 @@
     "id": 22,
     "title": "Gladiator",
     "year": 2000,
-    "genres": ["Action", "Adventure", "Drama"],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
     "director": "Ridley Scott",
     "rating": 8.5,
     "runtime": 155,
@@ -223,7 +300,10 @@
     "id": 23,
     "title": "Amelie",
     "year": 2001,
-    "genres": ["Comedy", "Romance"],
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
     "director": "Jean-Pierre Jeunet",
     "rating": 8.3,
     "runtime": 122,
@@ -233,7 +313,10 @@
     "id": 24,
     "title": "Django Unchained",
     "year": 2012,
-    "genres": ["Drama", "Western"],
+    "genres": [
+      "Drama",
+      "Western"
+    ],
     "director": "Quentin Tarantino",
     "rating": 8.4,
     "runtime": 165,
@@ -243,7 +326,11 @@
     "id": 25,
     "title": "The Prestige",
     "year": 2006,
-    "genres": ["Drama", "Mystery", "Sci-Fi"],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi"
+    ],
     "director": "Christopher Nolan",
     "rating": 8.5,
     "runtime": 130,
@@ -253,7 +340,11 @@
     "id": 26,
     "title": "Howl's Moving Castle",
     "year": 2004,
-    "genres": ["Animation", "Fantasy", "Romance"],
+    "genres": [
+      "Animation",
+      "Fantasy",
+      "Romance"
+    ],
     "director": "Hayao Miyazaki",
     "rating": 8.2,
     "runtime": 119,
@@ -263,7 +354,11 @@
     "id": 27,
     "title": "A Quiet Place",
     "year": 2018,
-    "genres": ["Horror", "Sci-Fi", "Thriller"],
+    "genres": [
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
     "director": "John Krasinski",
     "rating": 7.5,
     "runtime": 90,
@@ -273,7 +368,11 @@
     "id": 28,
     "title": "The Truman Show",
     "year": 1998,
-    "genres": ["Comedy", "Drama", "Sci-Fi"],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Sci-Fi"
+    ],
     "director": "Peter Weir",
     "rating": 8.2,
     "runtime": 103,
@@ -283,7 +382,11 @@
     "id": 29,
     "title": "Blade Runner 2049",
     "year": 2017,
-    "genres": ["Sci-Fi", "Drama", "Mystery"],
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Mystery"
+    ],
     "director": "Denis Villeneuve",
     "rating": 8.0,
     "runtime": 164,
@@ -293,10 +396,4021 @@
     "id": 30,
     "title": "Little Miss Sunshine",
     "year": 2006,
-    "genres": ["Comedy", "Drama"],
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "director": "Jonathan Dayton, Valerie Faris",
     "rating": 7.8,
     "runtime": 101,
     "description": "A wonderfully dysfunctional family road-trips across the country so their young daughter can compete in a beauty pageant."
+  },
+  {
+    "id": 31,
+    "title": "Die Hard",
+    "year": 1988,
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "director": "John McTiernan",
+    "rating": 8.2,
+    "runtime": 132,
+    "description": "An NYPD officer must save his wife and other hostages from terrorists during a Christmas party at a Los Angeles skyscraper."
+  },
+  {
+    "id": 32,
+    "title": "Raiders of the Lost Ark",
+    "year": 1981,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "director": "Steven Spielberg",
+    "rating": 8.4,
+    "runtime": 115,
+    "description": "An archaeologist races Nazi forces to find the legendary Ark of the Covenant before it falls into the wrong hands."
+  },
+  {
+    "id": 33,
+    "title": "Terminator 2: Judgment Day",
+    "year": 1991,
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "director": "James Cameron",
+    "rating": 8.6,
+    "runtime": 137,
+    "description": "A cyborg is sent back in time to protect a young boy destined to lead humanity's resistance against machines."
+  },
+  {
+    "id": 34,
+    "title": "Aliens",
+    "year": 1986,
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Horror"
+    ],
+    "director": "James Cameron",
+    "rating": 8.4,
+    "runtime": 137,
+    "description": "A warrant officer returns to the planet where her crew encountered deadly alien creatures, this time with a team of marines."
+  },
+  {
+    "id": 35,
+    "title": "Jurassic Park",
+    "year": 1993,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "director": "Steven Spielberg",
+    "rating": 8.2,
+    "runtime": 127,
+    "description": "A theme park of cloned dinosaurs descends into chaos when the security systems fail."
+  },
+  {
+    "id": 36,
+    "title": "The Avengers",
+    "year": 2012,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "director": "Joss Whedon",
+    "rating": 8.0,
+    "runtime": 143,
+    "description": "Earth's mightiest heroes must assemble to stop a mischievous god and his alien army from enslaving humanity."
+  },
+  {
+    "id": 37,
+    "title": "John Wick",
+    "year": 2014,
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "Chad Stahelski",
+    "rating": 7.4,
+    "runtime": 101,
+    "description": "A retired hitman comes out of retirement to track down the gangsters who took everything from him."
+  },
+  {
+    "id": 38,
+    "title": "Casino Royale",
+    "year": 2006,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "director": "Martin Campbell",
+    "rating": 8.0,
+    "runtime": 144,
+    "description": "A newly minted secret agent takes on a financier of terrorists in a high-stakes poker game."
+  },
+  {
+    "id": 39,
+    "title": "The Bourne Identity",
+    "year": 2002,
+    "genres": [
+      "Action",
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Doug Liman",
+    "rating": 7.9,
+    "runtime": 119,
+    "description": "A man is found floating in the ocean with no memory of who he is, and must piece together his violent past."
+  },
+  {
+    "id": 40,
+    "title": "Top Gun: Maverick",
+    "year": 2022,
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "director": "Joseph Kosinski",
+    "rating": 8.3,
+    "runtime": 130,
+    "description": "A veteran fighter pilot is called back to train a new group of graduates for a dangerous mission."
+  },
+  {
+    "id": 41,
+    "title": "Speed",
+    "year": 1994,
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "director": "Jan de Bont",
+    "rating": 7.3,
+    "runtime": 116,
+    "description": "A young police officer must keep a bus moving above fifty miles per hour or a bomb aboard will detonate."
+  },
+  {
+    "id": 42,
+    "title": "Indiana Jones and the Last Crusade",
+    "year": 1989,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "director": "Steven Spielberg",
+    "rating": 8.2,
+    "runtime": 127,
+    "description": "An archaeologist teams up with his estranged father to find the Holy Grail before the Nazis do."
+  },
+  {
+    "id": 43,
+    "title": "Kill Bill: Vol. 1",
+    "year": 2003,
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "Quentin Tarantino",
+    "rating": 8.2,
+    "runtime": 111,
+    "description": "A former assassin seeks revenge on the team of killers who betrayed her on her wedding day."
+  },
+  {
+    "id": 44,
+    "title": "The Bourne Ultimatum",
+    "year": 2007,
+    "genres": [
+      "Action",
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Paul Greengrass",
+    "rating": 8.0,
+    "runtime": 115,
+    "description": "A trained assassin continues to hunt down the truth about the black-ops program that created him."
+  },
+  {
+    "id": 45,
+    "title": "Skyfall",
+    "year": 2012,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "director": "Sam Mendes",
+    "rating": 7.8,
+    "runtime": 143,
+    "description": "A secret agent investigates an attack on his agency that leads him to a former operative with a personal vendetta."
+  },
+  {
+    "id": 46,
+    "title": "Edge of Tomorrow",
+    "year": 2014,
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "director": "Doug Liman",
+    "rating": 7.9,
+    "runtime": 113,
+    "description": "A soldier fighting aliens gets caught in a time loop, reliving the same brutal day of combat over and over."
+  },
+  {
+    "id": 47,
+    "title": "Logan",
+    "year": 2017,
+    "genres": [
+      "Action",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "director": "James Mangold",
+    "rating": 8.1,
+    "runtime": 137,
+    "description": "An aging mutant hero cares for an ailing mentor while protecting a young girl with dangerous powers from dark forces."
+  },
+  {
+    "id": 48,
+    "title": "The Raid",
+    "year": 2011,
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "Gareth Evans",
+    "rating": 7.6,
+    "runtime": 101,
+    "description": "A SWAT team becomes trapped in a tenement building run by a ruthless crime lord."
+  },
+  {
+    "id": 49,
+    "title": "Mission: Impossible - Fallout",
+    "year": 2018,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "director": "Christopher McQuarrie",
+    "rating": 7.7,
+    "runtime": 147,
+    "description": "An agent and his team race against time after a mission gone wrong threatens to unleash a global catastrophe."
+  },
+  {
+    "id": 50,
+    "title": "Black Panther",
+    "year": 2018,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "director": "Ryan Coogler",
+    "rating": 7.3,
+    "runtime": 134,
+    "description": "The new king of a hidden, technologically advanced African nation must defend his throne from a vengeful challenger."
+  },
+  {
+    "id": 51,
+    "title": "2001: A Space Odyssey",
+    "year": 1968,
+    "genres": [
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "director": "Stanley Kubrick",
+    "rating": 8.3,
+    "runtime": 149,
+    "description": "A voyage to Jupiter with a sentient computer reveals mysteries about human evolution and existence."
+  },
+  {
+    "id": 52,
+    "title": "Blade Runner",
+    "year": 1982,
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Ridley Scott",
+    "rating": 8.1,
+    "runtime": 117,
+    "description": "A weary detective hunts down bioengineered humans hiding on Earth in a neon-drenched future."
+  },
+  {
+    "id": 53,
+    "title": "Alien",
+    "year": 1979,
+    "genres": [
+      "Sci-Fi",
+      "Horror"
+    ],
+    "director": "Ridley Scott",
+    "rating": 8.5,
+    "runtime": 117,
+    "description": "The crew of a commercial spacecraft encounters a deadly extraterrestrial organism after investigating a distress signal."
+  },
+  {
+    "id": 54,
+    "title": "Arrival",
+    "year": 2016,
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Denis Villeneuve",
+    "rating": 7.9,
+    "runtime": 116,
+    "description": "A linguist is recruited to communicate with mysterious alien visitors before global tensions escalate into war."
+  },
+  {
+    "id": 55,
+    "title": "Ex Machina",
+    "year": 2014,
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Alex Garland",
+    "rating": 7.7,
+    "runtime": 108,
+    "description": "A programmer is invited to administer a test to determine whether a stunning humanoid AI is truly conscious."
+  },
+  {
+    "id": 56,
+    "title": "Dune",
+    "year": 2021,
+    "genres": [
+      "Sci-Fi",
+      "Adventure",
+      "Drama"
+    ],
+    "director": "Denis Villeneuve",
+    "rating": 8.0,
+    "runtime": 155,
+    "description": "A young heir must navigate treachery and prophecy on a dangerous desert planet that holds the universe's most valuable resource."
+  },
+  {
+    "id": 57,
+    "title": "Her",
+    "year": 2013,
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Spike Jonze",
+    "rating": 8.0,
+    "runtime": 126,
+    "description": "A lonely writer develops an unlikely relationship with an intelligent operating system designed to meet his every need."
+  },
+  {
+    "id": 58,
+    "title": "District 9",
+    "year": 2009,
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Thriller"
+    ],
+    "director": "Neill Blomkamp",
+    "rating": 7.9,
+    "runtime": 112,
+    "description": "An extraterrestrial race confined to a slum on Earth becomes the center of a bureaucrat's moral awakening."
+  },
+  {
+    "id": 59,
+    "title": "Children of Men",
+    "year": 2006,
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Alfonso Cuaron",
+    "rating": 7.9,
+    "runtime": 109,
+    "description": "In a future where humanity has become infertile, a former activist must protect the world's only pregnant woman."
+  },
+  {
+    "id": 60,
+    "title": "Gattaca",
+    "year": 1997,
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Andrew Niccol",
+    "rating": 7.8,
+    "runtime": 106,
+    "description": "In a genetically engineered future, a man with natural-born flaws assumes another's identity to pursue his dream of space travel."
+  },
+  {
+    "id": 61,
+    "title": "The Fifth Element",
+    "year": 1997,
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "director": "Luc Besson",
+    "rating": 7.6,
+    "runtime": 126,
+    "description": "A cab driver becomes humanity's unlikely last hope when he's drawn into a battle to stop an ancient evil."
+  },
+  {
+    "id": 62,
+    "title": "Minority Report",
+    "year": 2002,
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Mystery"
+    ],
+    "director": "Steven Spielberg",
+    "rating": 7.6,
+    "runtime": 145,
+    "description": "A police chief who hunts down criminals before they commit their crimes becomes the prime suspect in a future murder."
+  },
+  {
+    "id": 63,
+    "title": "WALL-E",
+    "year": 2008,
+    "genres": [
+      "Animation",
+      "Sci-Fi",
+      "Family"
+    ],
+    "director": "Andrew Stanton",
+    "rating": 8.4,
+    "runtime": 98,
+    "description": "A lonely trash-compacting robot on a deserted Earth falls for a sleek probe sent to search for signs of life."
+  },
+  {
+    "id": 64,
+    "title": "Looper",
+    "year": 2012,
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Thriller"
+    ],
+    "director": "Rian Johnson",
+    "rating": 7.4,
+    "runtime": 118,
+    "description": "A hitman who kills targets sent back in time from the future is forced to confront his own future self."
+  },
+  {
+    "id": 65,
+    "title": "Everything Everywhere All at Once",
+    "year": 2022,
+    "genres": [
+      "Sci-Fi",
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Daniel Kwan, Daniel Scheinert",
+    "rating": 7.8,
+    "runtime": 140,
+    "description": "An overwhelmed laundromat owner discovers she must connect with parallel universe versions of herself to save existence."
+  },
+  {
+    "id": 66,
+    "title": "The Lion King",
+    "year": 1994,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Drama"
+    ],
+    "director": "Roger Allers, Rob Minkoff",
+    "rating": 8.5,
+    "runtime": 88,
+    "description": "A young lion prince flees his kingdom after his father's murder, only to learn the true meaning of responsibility and courage."
+  },
+  {
+    "id": 67,
+    "title": "Up",
+    "year": 2009,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "Pete Docter",
+    "rating": 8.3,
+    "runtime": 96,
+    "description": "An elderly widower ties thousands of balloons to his house and sets off on the adventure he always promised his late wife."
+  },
+  {
+    "id": 68,
+    "title": "Finding Nemo",
+    "year": 2003,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "Andrew Stanton",
+    "rating": 8.2,
+    "runtime": 100,
+    "description": "An anxious clownfish sets off across the ocean to rescue his son, who was captured by a diver."
+  },
+  {
+    "id": 69,
+    "title": "Inside Out",
+    "year": 2015,
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Pete Docter",
+    "rating": 8.1,
+    "runtime": 95,
+    "description": "The five emotions inside a young girl's mind struggle to guide her through a difficult family move."
+  },
+  {
+    "id": 70,
+    "title": "Ratatouille",
+    "year": 2007,
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Family"
+    ],
+    "director": "Brad Bird",
+    "rating": 8.1,
+    "runtime": 111,
+    "description": "A rat with dreams of becoming a chef forms an unlikely partnership with a young kitchen worker in Paris."
+  },
+  {
+    "id": 71,
+    "title": "How to Train Your Dragon",
+    "year": 2010,
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "director": "Dean DeBlois, Chris Sanders",
+    "rating": 8.1,
+    "runtime": 98,
+    "description": "A young Viking befriends the dragon he was raised to hate, challenging centuries of conflict between their peoples."
+  },
+  {
+    "id": 72,
+    "title": "Shrek",
+    "year": 2001,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "Andrew Adamson, Vicky Jenson",
+    "rating": 7.9,
+    "runtime": 90,
+    "description": "A grumpy ogre reluctantly sets out to rescue a princess in order to reclaim his swamp from banished fairy tale creatures."
+  },
+  {
+    "id": 73,
+    "title": "Zootopia",
+    "year": 2016,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "Byron Howard, Rich Moore",
+    "rating": 8.0,
+    "runtime": 108,
+    "description": "A rookie rabbit officer and a con-artist fox uncover a conspiracy in a city where predators and prey live side by side."
+  },
+  {
+    "id": 74,
+    "title": "The Incredibles",
+    "year": 2004,
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "director": "Brad Bird",
+    "rating": 8.0,
+    "runtime": 115,
+    "description": "A family of retired superheroes is forced back into action to save the world and rediscover what makes them a family."
+  },
+  {
+    "id": 75,
+    "title": "My Neighbor Totoro",
+    "year": 1988,
+    "genres": [
+      "Animation",
+      "Family",
+      "Fantasy"
+    ],
+    "director": "Hayao Miyazaki",
+    "rating": 8.1,
+    "runtime": 86,
+    "description": "Two young sisters befriend gentle forest spirits after moving to the countryside to be near their ailing mother."
+  },
+  {
+    "id": 76,
+    "title": "Princess Mononoke",
+    "year": 1997,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Fantasy"
+    ],
+    "director": "Hayao Miyazaki",
+    "rating": 8.4,
+    "runtime": 134,
+    "description": "A prince becomes entangled in a war between forest gods and a mining colony that threatens the natural world."
+  },
+  {
+    "id": 77,
+    "title": "Akira",
+    "year": 1988,
+    "genres": [
+      "Animation",
+      "Action",
+      "Sci-Fi"
+    ],
+    "director": "Katsuhiro Otomo",
+    "rating": 8.0,
+    "runtime": 124,
+    "description": "A biker gang leader's friend develops terrifying psychic powers after a government experiment goes wrong in a dystopian Tokyo."
+  },
+  {
+    "id": 78,
+    "title": "Persepolis",
+    "year": 2007,
+    "genres": [
+      "Animation",
+      "Biography",
+      "Drama"
+    ],
+    "director": "Vincent Paronnaud, Marjane Satrapi",
+    "rating": 8.0,
+    "runtime": 96,
+    "description": "A young girl comes of age during the Iranian Revolution, navigating identity and exile in a changing world."
+  },
+  {
+    "id": 79,
+    "title": "Klaus",
+    "year": 2019,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "Sergio Pablos",
+    "rating": 8.2,
+    "runtime": 96,
+    "description": "A spoiled postman is banished to a frozen town, where an unlikely friendship with a reclusive toymaker sparks a new legend."
+  },
+  {
+    "id": 80,
+    "title": "The Iron Giant",
+    "year": 1999,
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "director": "Brad Bird",
+    "rating": 8.1,
+    "runtime": 86,
+    "description": "A boy befriends a giant robot from outer space and works to protect him from a paranoid government agent."
+  },
+  {
+    "id": 81,
+    "title": "Groundhog Day",
+    "year": 1993,
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Romance"
+    ],
+    "director": "Harold Ramis",
+    "rating": 8.0,
+    "runtime": 101,
+    "description": "A cynical weatherman is forced to relive the same day over and over until he learns to become a better person."
+  },
+  {
+    "id": 82,
+    "title": "Superbad",
+    "year": 2007,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Greg Mottola",
+    "rating": 7.6,
+    "runtime": 113,
+    "description": "Two inseparable high school friends embark on a chaotic quest to buy alcohol for a party before they head off to separate colleges."
+  },
+  {
+    "id": 83,
+    "title": "Bridesmaids",
+    "year": 2011,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Paul Feig",
+    "rating": 6.8,
+    "runtime": 125,
+    "description": "A maid of honor's life unravels as she competes with a new bridesmaid for her best friend's affection ahead of the wedding."
+  },
+  {
+    "id": 84,
+    "title": "The Hangover",
+    "year": 2009,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Todd Phillips",
+    "rating": 7.7,
+    "runtime": 100,
+    "description": "Three friends must retrace their blackout night in Las Vegas to find the missing groom before the wedding."
+  },
+  {
+    "id": 85,
+    "title": "Anchorman: The Legend of Ron Burgundy",
+    "year": 2004,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Adam McKay",
+    "rating": 7.2,
+    "runtime": 94,
+    "description": "A vain 1970s news anchor's world is turned upside down when a talented woman joins his previously all-male team."
+  },
+  {
+    "id": 86,
+    "title": "Ferris Bueller's Day Off",
+    "year": 1986,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "John Hughes",
+    "rating": 7.8,
+    "runtime": 103,
+    "description": "A charismatic high schooler skips class for a wild day in the city while his suspicious principal tries to catch him."
+  },
+  {
+    "id": 87,
+    "title": "Napoleon Dynamite",
+    "year": 2004,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Jared Hess",
+    "rating": 6.9,
+    "runtime": 82,
+    "description": "An awkward small-town teenager navigates high school, family chaos, and his best friend's run for class president."
+  },
+  {
+    "id": 88,
+    "title": "Booksmart",
+    "year": 2019,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Olivia Wilde",
+    "rating": 7.1,
+    "runtime": 105,
+    "description": "Two academically driven best friends try to cram four years of fun into one wild night before graduation."
+  },
+  {
+    "id": 89,
+    "title": "The Big Lebowski",
+    "year": 1998,
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Joel Coen, Ethan Coen",
+    "rating": 8.1,
+    "runtime": 117,
+    "description": "A laid-back slacker is mistaken for a millionaire of the same name and dragged into a bizarre kidnapping scheme."
+  },
+  {
+    "id": 90,
+    "title": "Dumb and Dumber",
+    "year": 1994,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Peter Farrelly, Bobby Farrelly",
+    "rating": 7.3,
+    "runtime": 107,
+    "description": "Two well-meaning but dim-witted friends drive cross-country to return a briefcase to its rightful owner."
+  },
+  {
+    "id": 91,
+    "title": "Legally Blonde",
+    "year": 2001,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Robert Luketic",
+    "rating": 6.4,
+    "runtime": 96,
+    "description": "A sorority queen enrolls at Harvard Law School to win back her ex, and discovers she's smarter than anyone gave her credit for."
+  },
+  {
+    "id": 92,
+    "title": "Mean Girls",
+    "year": 2004,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Mark Waters",
+    "rating": 7.1,
+    "runtime": 97,
+    "description": "A homeschooled teenager learns the brutal social rules of high school after infiltrating a clique of ruthless popular girls."
+  },
+  {
+    "id": 93,
+    "title": "Borat",
+    "year": 2006,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Larry Charles",
+    "rating": 7.3,
+    "runtime": 84,
+    "description": "A Kazakh television journalist travels across America, capturing unscripted and increasingly outrageous encounters along the way."
+  },
+  {
+    "id": 94,
+    "title": "Zombieland",
+    "year": 2009,
+    "genres": [
+      "Comedy",
+      "Horror"
+    ],
+    "director": "Ruben Fleischer",
+    "rating": 7.6,
+    "runtime": 88,
+    "description": "A group of mismatched survivors bond and battle their way across a zombie-ravaged country in search of safety."
+  },
+  {
+    "id": 95,
+    "title": "What We Do in the Shadows",
+    "year": 2014,
+    "genres": [
+      "Comedy",
+      "Horror"
+    ],
+    "director": "Jemaine Clement, Taika Waititi",
+    "rating": 7.7,
+    "runtime": 86,
+    "description": "A documentary crew follows a group of ancient vampire roommates struggling with the mundane realities of modern life."
+  },
+  {
+    "id": 96,
+    "title": "Schindler's List",
+    "year": 1993,
+    "genres": [
+      "Drama",
+      "Biography",
+      "History"
+    ],
+    "director": "Steven Spielberg",
+    "rating": 9.0,
+    "runtime": 195,
+    "description": "A German businessman gradually becomes determined to save his Jewish employees from the horrors of the Holocaust."
+  },
+  {
+    "id": 97,
+    "title": "Fight Club",
+    "year": 1999,
+    "genres": [
+      "Drama"
+    ],
+    "director": "David Fincher",
+    "rating": 8.8,
+    "runtime": 139,
+    "description": "An insomniac office worker and a soap salesman form an underground fight club that spirals into something much larger and more dangerous."
+  },
+  {
+    "id": 98,
+    "title": "Goodfellas",
+    "year": 1990,
+    "genres": [
+      "Drama",
+      "Crime",
+      "Biography"
+    ],
+    "director": "Martin Scorsese",
+    "rating": 8.7,
+    "runtime": 145,
+    "description": "A young man's rise through the ranks of the mob is chronicled across three decades of crime, loyalty, and betrayal."
+  },
+  {
+    "id": 99,
+    "title": "The Green Mile",
+    "year": 1999,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Crime"
+    ],
+    "director": "Frank Darabont",
+    "rating": 8.6,
+    "runtime": 189,
+    "description": "A death row prison guard witnesses extraordinary events after a condemned man with a miraculous gift arrives on the block."
+  },
+  {
+    "id": 100,
+    "title": "American History X",
+    "year": 1998,
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "director": "Tony Kaye",
+    "rating": 8.5,
+    "runtime": 119,
+    "description": "A reformed neo-Nazi tries to prevent his younger brother from going down the same violent path he once took."
+  },
+  {
+    "id": 101,
+    "title": "The Departed",
+    "year": 2006,
+    "genres": [
+      "Drama",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "Martin Scorsese",
+    "rating": 8.5,
+    "runtime": 151,
+    "description": "An undercover cop and a mole in the police force try to identify each other while infiltrating the Irish mob."
+  },
+  {
+    "id": 102,
+    "title": "There Will Be Blood",
+    "year": 2007,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Paul Thomas Anderson",
+    "rating": 8.2,
+    "runtime": 158,
+    "description": "A ruthless silver miner turned oil tycoon builds an empire in the early 20th century California oil boom."
+  },
+  {
+    "id": 103,
+    "title": "No Country for Old Men",
+    "year": 2007,
+    "genres": [
+      "Drama",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "Joel Coen, Ethan Coen",
+    "rating": 8.2,
+    "runtime": 122,
+    "description": "A hunter who stumbles upon a drug deal gone wrong is pursued by a relentless killer across the Texas desert."
+  },
+  {
+    "id": 104,
+    "title": "12 Years a Slave",
+    "year": 2013,
+    "genres": [
+      "Drama",
+      "Biography",
+      "History"
+    ],
+    "director": "Steve McQueen",
+    "rating": 8.1,
+    "runtime": 134,
+    "description": "A free Black man is kidnapped and sold into slavery, enduring years of brutality while fighting to reclaim his freedom."
+  },
+  {
+    "id": 105,
+    "title": "Moonlight",
+    "year": 2016,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Barry Jenkins",
+    "rating": 7.4,
+    "runtime": 111,
+    "description": "A young Black man's coming-of-age is traced across three chapters as he grapples with identity, sexuality, and belonging."
+  },
+  {
+    "id": 106,
+    "title": "Manchester by the Sea",
+    "year": 2016,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Kenneth Lonergan",
+    "rating": 7.8,
+    "runtime": 137,
+    "description": "A withdrawn handyman is forced to confront his past when he becomes the guardian of his teenage nephew after a family tragedy."
+  },
+  {
+    "id": 107,
+    "title": "A Beautiful Mind",
+    "year": 2001,
+    "genres": [
+      "Drama",
+      "Biography"
+    ],
+    "director": "Ron Howard",
+    "rating": 8.2,
+    "runtime": 135,
+    "description": "A brilliant mathematician's groundbreaking career is upended by the onset of schizophrenia."
+  },
+  {
+    "id": 108,
+    "title": "Good Will Hunting",
+    "year": 1997,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Gus Van Sant",
+    "rating": 8.3,
+    "runtime": 126,
+    "description": "A janitor with a genius-level intellect must confront his troubled past with the help of a therapist and a mentor."
+  },
+  {
+    "id": 109,
+    "title": "The Pianist",
+    "year": 2002,
+    "genres": [
+      "Drama",
+      "Biography",
+      "War"
+    ],
+    "director": "Roman Polanski",
+    "rating": 8.5,
+    "runtime": 150,
+    "description": "A Polish-Jewish pianist struggles to survive the destruction of Warsaw during the Second World War."
+  },
+  {
+    "id": 110,
+    "title": "Requiem for a Dream",
+    "year": 2000,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Darren Aronofsky",
+    "rating": 8.3,
+    "runtime": 102,
+    "description": "Four people's lives spiral into addiction as their individual pursuits of a better life turn into devastating dependency."
+  },
+  {
+    "id": 111,
+    "title": "American Beauty",
+    "year": 1999,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Sam Mendes",
+    "rating": 8.3,
+    "runtime": 122,
+    "description": "A suburban father's midlife crisis unravels the carefully maintained facade of his family's picture-perfect life."
+  },
+  {
+    "id": 112,
+    "title": "The Curious Case of Benjamin Button",
+    "year": 2008,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
+    "director": "David Fincher",
+    "rating": 7.8,
+    "runtime": 166,
+    "description": "A man born with the appearance of old age ages in reverse, living his life backward through the twentieth century."
+  },
+  {
+    "id": 113,
+    "title": "Marriage Story",
+    "year": 2019,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Noah Baumbach",
+    "rating": 7.9,
+    "runtime": 137,
+    "description": "A stage director and his actress wife struggle through a painful and revealing coast-to-coast divorce."
+  },
+  {
+    "id": 114,
+    "title": "The Wolf of Wall Street",
+    "year": 2013,
+    "genres": [
+      "Drama",
+      "Biography",
+      "Comedy"
+    ],
+    "director": "Martin Scorsese",
+    "rating": 8.2,
+    "runtime": 180,
+    "description": "A stockbroker's rapid rise to wealth through fraud and excess leads to an equally spectacular fall."
+  },
+  {
+    "id": 115,
+    "title": "Room",
+    "year": 2015,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Lenny Abrahamson",
+    "rating": 8.1,
+    "runtime": 118,
+    "description": "A mother and her five-year-old son held captive in a small room must adjust to a world neither of them fully understands after their escape."
+  },
+  {
+    "id": 116,
+    "title": "Se7en",
+    "year": 1995,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "David Fincher",
+    "rating": 8.6,
+    "runtime": 127,
+    "description": "Two detectives hunt a serial killer who uses the seven deadly sins as his method and motive."
+  },
+  {
+    "id": 117,
+    "title": "Zodiac",
+    "year": 2007,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "David Fincher",
+    "rating": 7.7,
+    "runtime": 157,
+    "description": "A cartoonist becomes obsessed with identifying the elusive serial killer terrorizing the San Francisco Bay Area."
+  },
+  {
+    "id": 118,
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Jonathan Demme",
+    "rating": 8.6,
+    "runtime": 118,
+    "description": "A young FBI trainee seeks the counsel of an imprisoned cannibalistic killer to catch another serial murderer."
+  },
+  {
+    "id": 119,
+    "title": "Heat",
+    "year": 1995,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Michael Mann",
+    "rating": 8.3,
+    "runtime": 170,
+    "description": "A master thief and the relentless detective hunting him find their lives inextricably crossing paths."
+  },
+  {
+    "id": 120,
+    "title": "The Usual Suspects",
+    "year": 1995,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Bryan Singer",
+    "rating": 8.5,
+    "runtime": 106,
+    "description": "A sole survivor of a boat explosion tells a convoluted story to investigators about the mysterious criminal mastermind behind it."
+  },
+  {
+    "id": 121,
+    "title": "Memento",
+    "year": 2000,
+    "genres": [
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Christopher Nolan",
+    "rating": 8.4,
+    "runtime": 113,
+    "description": "A man with short-term memory loss uses notes and tattoos to hunt down his wife's killer."
+  },
+  {
+    "id": 122,
+    "title": "Prisoners",
+    "year": 2013,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Denis Villeneuve",
+    "rating": 8.1,
+    "runtime": 153,
+    "description": "A father takes matters into his own hands when police fail to find his daughter and her friend after their abduction."
+  },
+  {
+    "id": 123,
+    "title": "Gone Girl",
+    "year": 2014,
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "David Fincher",
+    "rating": 8.1,
+    "runtime": 149,
+    "description": "A man becomes the prime suspect in his wife's disappearance as the case reveals disturbing truths about their marriage."
+  },
+  {
+    "id": 124,
+    "title": "Nightcrawler",
+    "year": 2014,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Dan Gilroy",
+    "rating": 7.8,
+    "runtime": 117,
+    "description": "An unscrupulous freelance cameraman will do anything to capture the most graphic crime footage for the morning news."
+  },
+  {
+    "id": 125,
+    "title": "Uncut Gems",
+    "year": 2019,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Josh Safdie, Benny Safdie",
+    "rating": 7.4,
+    "runtime": 135,
+    "description": "A charismatic jeweler and gambling addict makes a series of increasingly high-stakes bets to score a windfall."
+  },
+  {
+    "id": 126,
+    "title": "Baby Driver",
+    "year": 2017,
+    "genres": [
+      "Action",
+      "Crime",
+      "Music"
+    ],
+    "director": "Edgar Wright",
+    "rating": 7.6,
+    "runtime": 113,
+    "description": "A talented getaway driver who relies on music to steady his focus tries to leave crime behind for the woman he loves."
+  },
+  {
+    "id": 127,
+    "title": "American Psycho",
+    "year": 2000,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Horror"
+    ],
+    "director": "Mary Harron",
+    "rating": 7.6,
+    "runtime": 102,
+    "description": "A wealthy 1980s investment banker hides a horrifying secret life as a serial killer behind his polished exterior."
+  },
+  {
+    "id": 128,
+    "title": "Reservoir Dogs",
+    "year": 1992,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Quentin Tarantino",
+    "rating": 8.3,
+    "runtime": 99,
+    "description": "A botched jewelry heist leaves a gang of criminals questioning which one of them is a police informant."
+  },
+  {
+    "id": 129,
+    "title": "The Shining",
+    "year": 1980,
+    "genres": [
+      "Horror",
+      "Drama"
+    ],
+    "director": "Stanley Kubrick",
+    "rating": 8.4,
+    "runtime": 146,
+    "description": "A writer's descent into madness at an isolated, haunted hotel puts his wife and psychic son in grave danger."
+  },
+  {
+    "id": 130,
+    "title": "Hereditary",
+    "year": 2018,
+    "genres": [
+      "Horror",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Ari Aster",
+    "rating": 7.3,
+    "runtime": 127,
+    "description": "A family unravels dark secrets and inherited trauma following the death of their secretive grandmother."
+  },
+  {
+    "id": 131,
+    "title": "The Exorcist",
+    "year": 1973,
+    "genres": [
+      "Horror"
+    ],
+    "director": "William Friedkin",
+    "rating": 8.1,
+    "runtime": 122,
+    "description": "A mother seeks the help of two priests when her young daughter is possessed by a mysterious and terrifying entity."
+  },
+  {
+    "id": 132,
+    "title": "It Follows",
+    "year": 2014,
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "director": "David Robert Mitchell",
+    "rating": 6.8,
+    "runtime": 100,
+    "description": "A young woman is stalked by a shapeshifting entity after a sexual encounter passes a deadly curse onto her."
+  },
+  {
+    "id": 133,
+    "title": "The Conjuring",
+    "year": 2013,
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "James Wan",
+    "rating": 7.5,
+    "runtime": 112,
+    "description": "Paranormal investigators help a family terrorized by a dark presence in their farmhouse."
+  },
+  {
+    "id": 134,
+    "title": "Midsommar",
+    "year": 2019,
+    "genres": [
+      "Horror",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Ari Aster",
+    "rating": 7.1,
+    "runtime": 148,
+    "description": "A grieving woman's trip to a Swedish festival with her boyfriend descends into a surreal and disturbing nightmare."
+  },
+  {
+    "id": 135,
+    "title": "The Babadook",
+    "year": 2014,
+    "genres": [
+      "Horror",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Jennifer Kent",
+    "rating": 6.8,
+    "runtime": 94,
+    "description": "A widowed mother and her troubled son are tormented by a sinister presence conjured from the pages of a mysterious book."
+  },
+  {
+    "id": 136,
+    "title": "28 Days Later",
+    "year": 2002,
+    "genres": [
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "director": "Danny Boyle",
+    "rating": 7.6,
+    "runtime": 113,
+    "description": "A man wakes from a coma to find Britain devastated by a rage-inducing virus that has turned most of the population into the infected."
+  },
+  {
+    "id": 137,
+    "title": "Halloween",
+    "year": 1978,
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "director": "John Carpenter",
+    "rating": 7.7,
+    "runtime": 91,
+    "description": "A masked killer stalks a small Illinois town on Halloween night, years after murdering his sister as a child."
+  },
+  {
+    "id": 138,
+    "title": "Psycho",
+    "year": 1960,
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Alfred Hitchcock",
+    "rating": 8.5,
+    "runtime": 109,
+    "description": "A secretary on the run checks into a remote motel run by a disturbed man and his domineering mother."
+  },
+  {
+    "id": 139,
+    "title": "The Witch",
+    "year": 2015,
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "director": "Robert Eggers",
+    "rating": 6.9,
+    "runtime": 92,
+    "description": "A Puritan family's faith and sanity unravel after their infant disappears near the ominous woods bordering their farm."
+  },
+  {
+    "id": 140,
+    "title": "Scream",
+    "year": 1996,
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Comedy"
+    ],
+    "director": "Wes Craven",
+    "rating": 7.4,
+    "runtime": 111,
+    "description": "A masked killer begins stalking a small town's teenagers, all of whom seem to know a little too much about horror movies."
+  },
+  {
+    "id": 141,
+    "title": "A Nightmare on Elm Street",
+    "year": 1984,
+    "genres": [
+      "Horror",
+      "Fantasy"
+    ],
+    "director": "Wes Craven",
+    "rating": 7.4,
+    "runtime": 91,
+    "description": "A group of teenagers are stalked in their dreams by a disfigured killer who can murder them in their sleep."
+  },
+  {
+    "id": 142,
+    "title": "Us",
+    "year": 2019,
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Jordan Peele",
+    "rating": 6.8,
+    "runtime": 116,
+    "description": "A family's beach vacation turns into a nightmare when they're confronted by sinister doubles of themselves."
+  },
+  {
+    "id": 143,
+    "title": "Train to Busan",
+    "year": 2016,
+    "genres": [
+      "Horror",
+      "Action",
+      "Thriller"
+    ],
+    "director": "Yeon Sang-ho",
+    "rating": 7.6,
+    "runtime": 118,
+    "description": "Passengers on a high-speed train fight to survive as a zombie outbreak spreads uncontrollably across South Korea."
+  },
+  {
+    "id": 144,
+    "title": "Titanic",
+    "year": 1997,
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "James Cameron",
+    "rating": 7.9,
+    "runtime": 195,
+    "description": "A penniless artist and a wealthy young woman fall in love aboard the doomed maiden voyage of an unsinkable ship."
+  },
+  {
+    "id": 145,
+    "title": "The Notebook",
+    "year": 2004,
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Nick Cassavetes",
+    "rating": 7.8,
+    "runtime": 123,
+    "description": "An elderly man reads a story to a woman with dementia about two young lovers separated by class and circumstance."
+  },
+  {
+    "id": 146,
+    "title": "Pride & Prejudice",
+    "year": 2005,
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Joe Wright",
+    "rating": 7.8,
+    "runtime": 129,
+    "description": "A spirited young woman navigates love, class, and misunderstanding with a proud and wealthy gentleman in Regency-era England."
+  },
+  {
+    "id": 147,
+    "title": "When Harry Met Sally...",
+    "year": 1989,
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "director": "Rob Reiner",
+    "rating": 7.7,
+    "runtime": 96,
+    "description": "Two friends debate for over a decade whether men and women can ever truly just be friends."
+  },
+  {
+    "id": 148,
+    "title": "Before Sunrise",
+    "year": 1995,
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Richard Linklater",
+    "rating": 8.1,
+    "runtime": 101,
+    "description": "Two strangers meet on a train and spend one unforgettable night walking and talking through the streets of Vienna."
+  },
+  {
+    "id": 149,
+    "title": "Silver Linings Playbook",
+    "year": 2012,
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
+    "director": "David O. Russell",
+    "rating": 7.7,
+    "runtime": 122,
+    "description": "Two people with unresolved struggles form an unconventional bond while training for a dance competition."
+  },
+  {
+    "id": 150,
+    "title": "About Time",
+    "year": 2013,
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Fantasy"
+    ],
+    "director": "Richard Curtis",
+    "rating": 7.8,
+    "runtime": 123,
+    "description": "A young man discovers he can travel back in time and uses the gift to try to improve his love life and his family."
+  },
+  {
+    "id": 151,
+    "title": "500 Days of Summer",
+    "year": 2009,
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Marc Webb",
+    "rating": 7.7,
+    "runtime": 95,
+    "description": "A hopeless romantic looks back on his relationship with a woman who never quite believed in true love the way he did."
+  },
+  {
+    "id": 152,
+    "title": "Notting Hill",
+    "year": 1999,
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "director": "Roger Michell",
+    "rating": 7.2,
+    "runtime": 124,
+    "description": "A humble London bookshop owner's life is upended when he falls for one of the most famous actresses in the world."
+  },
+  {
+    "id": 153,
+    "title": "Crazy Rich Asians",
+    "year": 2018,
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Jon M. Chu",
+    "rating": 6.9,
+    "runtime": 120,
+    "description": "A woman travels to meet her boyfriend's family, only to discover they're one of the wealthiest in Singapore."
+  },
+  {
+    "id": 154,
+    "title": "Bohemian Rhapsody",
+    "year": 2018,
+    "genres": [
+      "Music",
+      "Biography",
+      "Drama"
+    ],
+    "director": "Bryan Singer",
+    "rating": 7.9,
+    "runtime": 134,
+    "description": "The story of a rock band's meteoric rise, built around the singular voice and vision of their flamboyant frontman."
+  },
+  {
+    "id": 155,
+    "title": "A Star Is Born",
+    "year": 2018,
+    "genres": [
+      "Music",
+      "Romance",
+      "Drama"
+    ],
+    "director": "Bradley Cooper",
+    "rating": 7.6,
+    "runtime": 136,
+    "description": "A fading musician discovers and falls in love with a struggling singer, launching her to stardom as his own career collapses."
+  },
+  {
+    "id": 156,
+    "title": "Once",
+    "year": 2007,
+    "genres": [
+      "Music",
+      "Drama",
+      "Romance"
+    ],
+    "director": "John Carney",
+    "rating": 7.8,
+    "runtime": 85,
+    "description": "A busking street musician and a Czech immigrant write and record songs together over the course of one transformative week."
+  },
+  {
+    "id": 157,
+    "title": "Sing Street",
+    "year": 2016,
+    "genres": [
+      "Music",
+      "Comedy",
+      "Drama"
+    ],
+    "director": "John Carney",
+    "rating": 7.9,
+    "runtime": 106,
+    "description": "A teenager in 1980s Dublin starts a band to impress a girl, discovering his own voice along the way."
+  },
+  {
+    "id": 158,
+    "title": "The Greatest Showman",
+    "year": 2017,
+    "genres": [
+      "Music",
+      "Biography",
+      "Drama"
+    ],
+    "director": "Michael Gracey",
+    "rating": 7.6,
+    "runtime": 105,
+    "description": "A visionary showman builds a spectacular circus that celebrates the extraordinary and unites an eclectic troupe of outcasts."
+  },
+  {
+    "id": 159,
+    "title": "Rocketman",
+    "year": 2019,
+    "genres": [
+      "Music",
+      "Biography",
+      "Drama"
+    ],
+    "director": "Dexter Fletcher",
+    "rating": 7.3,
+    "runtime": 121,
+    "description": "A flamboyant musician's turbulent journey from a shy piano prodigy to international superstardom is told through fantastical musical sequences."
+  },
+  {
+    "id": 160,
+    "title": "Shutter Island",
+    "year": 2010,
+    "genres": [
+      "Mystery",
+      "Thriller",
+      "Drama"
+    ],
+    "director": "Martin Scorsese",
+    "rating": 8.2,
+    "runtime": 138,
+    "description": "A U.S. Marshal investigating a psychiatric facility begins to question his own sanity as disturbing truths emerge."
+  },
+  {
+    "id": 161,
+    "title": "Rear Window",
+    "year": 1954,
+    "genres": [
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Alfred Hitchcock",
+    "rating": 8.5,
+    "runtime": 112,
+    "description": "A wheelchair-bound photographer becomes convinced his neighbor has committed murder after watching him from his apartment window."
+  },
+  {
+    "id": 162,
+    "title": "Vertigo",
+    "year": 1958,
+    "genres": [
+      "Mystery",
+      "Romance",
+      "Thriller"
+    ],
+    "director": "Alfred Hitchcock",
+    "rating": 8.3,
+    "runtime": 128,
+    "description": "A former detective with a fear of heights becomes dangerously obsessed with a woman he was hired to follow."
+  },
+  {
+    "id": 163,
+    "title": "Chinatown",
+    "year": 1974,
+    "genres": [
+      "Mystery",
+      "Crime",
+      "Drama"
+    ],
+    "director": "Roman Polanski",
+    "rating": 8.1,
+    "runtime": 130,
+    "description": "A private detective investigating a case of adultery uncovers a conspiracy involving water rights and murder in 1930s Los Angeles."
+  },
+  {
+    "id": 164,
+    "title": "The Girl with the Dragon Tattoo",
+    "year": 2011,
+    "genres": [
+      "Mystery",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "David Fincher",
+    "rating": 7.8,
+    "runtime": 158,
+    "description": "A disgraced journalist and a troubled hacker investigate a decades-old disappearance for a wealthy Swedish family."
+  },
+  {
+    "id": 165,
+    "title": "Enemy",
+    "year": 2013,
+    "genres": [
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Denis Villeneuve",
+    "rating": 6.9,
+    "runtime": 91,
+    "description": "A history professor is unsettled to discover a man who looks exactly like him working as a background actor."
+  },
+  {
+    "id": 166,
+    "title": "The Two Towers",
+    "year": 2002,
+    "genres": [
+      "Fantasy",
+      "Adventure"
+    ],
+    "director": "Peter Jackson",
+    "rating": 8.8,
+    "runtime": 179,
+    "description": "The fellowship is scattered as new alliances form to stand against a rising darkness threatening Middle-earth."
+  },
+  {
+    "id": 167,
+    "title": "The Return of the King",
+    "year": 2003,
+    "genres": [
+      "Fantasy",
+      "Adventure"
+    ],
+    "director": "Peter Jackson",
+    "rating": 9.0,
+    "runtime": 201,
+    "description": "The final battle for Middle-earth begins as the fate of the world rests on the shoulders of two small hobbits."
+  },
+  {
+    "id": 168,
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "year": 2001,
+    "genres": [
+      "Fantasy",
+      "Adventure",
+      "Family"
+    ],
+    "director": "Chris Columbus",
+    "rating": 7.6,
+    "runtime": 152,
+    "description": "An orphaned boy discovers he's a wizard and begins his first year at a magical school of witchcraft and wizardry."
+  },
+  {
+    "id": 169,
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "year": 2004,
+    "genres": [
+      "Fantasy",
+      "Adventure",
+      "Family"
+    ],
+    "director": "Alfonso Cuaron",
+    "rating": 7.9,
+    "runtime": 142,
+    "description": "A young wizard learns unsettling truths about his past when a dangerous escaped prisoner is said to be hunting him."
+  },
+  {
+    "id": 170,
+    "title": "Pan's Labyrinth",
+    "year": 2006,
+    "genres": [
+      "Fantasy",
+      "Drama",
+      "War"
+    ],
+    "director": "Guillermo del Toro",
+    "rating": 8.2,
+    "runtime": 118,
+    "description": "A young girl escapes into a dark fairy-tale world of her own imagining amid the brutal aftermath of the Spanish Civil War."
+  },
+  {
+    "id": 171,
+    "title": "Edward Scissorhands",
+    "year": 1990,
+    "genres": [
+      "Fantasy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Tim Burton",
+    "rating": 7.9,
+    "runtime": 105,
+    "description": "A gentle artificial man with scissors for hands is taken in by a suburban family and struggles to find where he belongs."
+  },
+  {
+    "id": 172,
+    "title": "The Princess Bride",
+    "year": 1987,
+    "genres": [
+      "Fantasy",
+      "Adventure",
+      "Romance"
+    ],
+    "director": "Rob Reiner",
+    "rating": 8.0,
+    "runtime": 98,
+    "description": "A farmhand-turned-pirate must rescue his true love from an arranged marriage to a scheming prince."
+  },
+  {
+    "id": 173,
+    "title": "Big Fish",
+    "year": 2003,
+    "genres": [
+      "Fantasy",
+      "Drama",
+      "Adventure"
+    ],
+    "director": "Tim Burton",
+    "rating": 8.0,
+    "runtime": 125,
+    "description": "A son tries to separate fact from fantasy in his dying father's tall tales about an extraordinary life."
+  },
+  {
+    "id": 174,
+    "title": "Coraline",
+    "year": 2009,
+    "genres": [
+      "Fantasy",
+      "Animation",
+      "Family"
+    ],
+    "director": "Henry Selick",
+    "rating": 7.7,
+    "runtime": 100,
+    "description": "A curious girl discovers an idealized parallel world behind a secret door in her new home, one that hides a sinister secret."
+  },
+  {
+    "id": 175,
+    "title": "Stardust",
+    "year": 2007,
+    "genres": [
+      "Fantasy",
+      "Adventure",
+      "Romance"
+    ],
+    "director": "Matthew Vaughn",
+    "rating": 7.6,
+    "runtime": 127,
+    "description": "A young man ventures into a magical kingdom to retrieve a fallen star and win the heart of the woman he loves."
+  },
+  {
+    "id": 176,
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "genres": [
+      "War",
+      "Drama"
+    ],
+    "director": "Steven Spielberg",
+    "rating": 8.6,
+    "runtime": 169,
+    "description": "A group of soldiers is sent behind enemy lines to bring home a paratrooper whose brothers have all been killed in action."
+  },
+  {
+    "id": 177,
+    "title": "Full Metal Jacket",
+    "year": 1987,
+    "genres": [
+      "War",
+      "Drama"
+    ],
+    "director": "Stanley Kubrick",
+    "rating": 8.3,
+    "runtime": 116,
+    "description": "A platoon of Marine recruits endures brutal training before facing the chaos and horror of the Vietnam War."
+  },
+  {
+    "id": 178,
+    "title": "Apocalypse Now",
+    "year": 1979,
+    "genres": [
+      "War",
+      "Drama"
+    ],
+    "director": "Francis Ford Coppola",
+    "rating": 8.4,
+    "runtime": 147,
+    "description": "A captain travels deep into the Cambodian jungle to assassinate a renegade colonel who has established himself as a god among a local tribe."
+  },
+  {
+    "id": 179,
+    "title": "1917",
+    "year": 2019,
+    "genres": [
+      "War",
+      "Drama"
+    ],
+    "director": "Sam Mendes",
+    "rating": 8.2,
+    "runtime": 119,
+    "description": "Two young soldiers race against time to deliver a message that could save thousands of lives on the front lines of World War I."
+  },
+  {
+    "id": 180,
+    "title": "Dunkirk",
+    "year": 2017,
+    "genres": [
+      "War",
+      "Action",
+      "Drama"
+    ],
+    "director": "Christopher Nolan",
+    "rating": 7.8,
+    "runtime": 106,
+    "description": "Allied soldiers are surrounded and evacuated from a French beach by a makeshift fleet of civilian and military vessels."
+  },
+  {
+    "id": 181,
+    "title": "Hacksaw Ridge",
+    "year": 2016,
+    "genres": [
+      "War",
+      "Biography",
+      "Drama"
+    ],
+    "director": "Mel Gibson",
+    "rating": 8.1,
+    "runtime": 139,
+    "description": "A pacifist combat medic saves dozens of lives during one of the bloodiest battles of World War II without ever carrying a weapon."
+  },
+  {
+    "id": 182,
+    "title": "Braveheart",
+    "year": 1995,
+    "genres": [
+      "War",
+      "Biography",
+      "Drama"
+    ],
+    "director": "Mel Gibson",
+    "rating": 8.3,
+    "runtime": 178,
+    "description": "A Scottish warrior leads an uprising against the tyranny of the English crown after the murder of his wife."
+  },
+  {
+    "id": 183,
+    "title": "Letters from Iwo Jima",
+    "year": 2006,
+    "genres": [
+      "War",
+      "Drama",
+      "History"
+    ],
+    "director": "Clint Eastwood",
+    "rating": 7.9,
+    "runtime": 141,
+    "description": "Japanese soldiers defending an island fortress face the final days of a doomed campaign during World War II."
+  },
+  {
+    "id": 184,
+    "title": "The Imitation Game",
+    "year": 2014,
+    "genres": [
+      "Biography",
+      "Drama",
+      "War"
+    ],
+    "director": "Morten Tyldum",
+    "rating": 8.0,
+    "runtime": 114,
+    "description": "A brilliant mathematician leads a team of codebreakers racing to crack Nazi Germany's Enigma cipher."
+  },
+  {
+    "id": 185,
+    "title": "Darkest Hour",
+    "year": 2017,
+    "genres": [
+      "Biography",
+      "Drama",
+      "War"
+    ],
+    "director": "Joe Wright",
+    "rating": 7.4,
+    "runtime": 125,
+    "description": "A newly appointed prime minister must decide whether to negotiate with an advancing enemy or rally a nation to fight on."
+  },
+  {
+    "id": 186,
+    "title": "Steve Jobs",
+    "year": 2015,
+    "genres": [
+      "Biography",
+      "Drama"
+    ],
+    "director": "Danny Boyle",
+    "rating": 7.2,
+    "runtime": 122,
+    "description": "The story of a visionary and volatile tech founder is told across three pivotal product launches that defined his career."
+  },
+  {
+    "id": 187,
+    "title": "Rush",
+    "year": 2013,
+    "genres": [
+      "Biography",
+      "Action",
+      "Drama"
+    ],
+    "director": "Ron Howard",
+    "rating": 8.1,
+    "runtime": 123,
+    "description": "The fierce rivalry between two Formula One drivers pushes both men to the limits of their talent and daring."
+  },
+  {
+    "id": 188,
+    "title": "The Theory of Everything",
+    "year": 2014,
+    "genres": [
+      "Biography",
+      "Drama",
+      "Romance"
+    ],
+    "director": "James Marsh",
+    "rating": 7.7,
+    "runtime": 123,
+    "description": "A brilliant physics student's diagnosis with a degenerative disease transforms his life and his groundbreaking work on the universe."
+  },
+  {
+    "id": 189,
+    "title": "Catch Me If You Can",
+    "year": 2002,
+    "genres": [
+      "Biography",
+      "Crime",
+      "Drama"
+    ],
+    "director": "Steven Spielberg",
+    "rating": 8.1,
+    "runtime": 141,
+    "description": "An FBI agent pursues a brilliant young con artist who has successfully impersonated a doctor, lawyer, and airline pilot."
+  },
+  {
+    "id": 190,
+    "title": "Ford v Ferrari",
+    "year": 2019,
+    "genres": [
+      "Biography",
+      "Action",
+      "Drama"
+    ],
+    "director": "James Mangold",
+    "rating": 8.1,
+    "runtime": 152,
+    "description": "An American car designer and a fearless driver battle corporate interference to build a race car that can beat Ferrari at Le Mans."
+  },
+  {
+    "id": 191,
+    "title": "Lincoln",
+    "year": 2012,
+    "genres": [
+      "Biography",
+      "Drama",
+      "History"
+    ],
+    "director": "Steven Spielberg",
+    "rating": 7.3,
+    "runtime": 150,
+    "description": "The president fights to pass the constitutional amendment that would abolish slavery in the final months of the Civil War."
+  },
+  {
+    "id": 192,
+    "title": "Milk",
+    "year": 2008,
+    "genres": [
+      "Biography",
+      "Drama",
+      "History"
+    ],
+    "director": "Gus Van Sant",
+    "rating": 7.5,
+    "runtime": 128,
+    "description": "A gay rights activist becomes one of the first openly gay elected officials in the United States, inspiring a movement."
+  },
+  {
+    "id": 193,
+    "title": "Rocky",
+    "year": 1976,
+    "genres": [
+      "Sport",
+      "Drama"
+    ],
+    "director": "John G. Avildsen",
+    "rating": 8.1,
+    "runtime": 120,
+    "description": "A small-time boxer gets a once-in-a-lifetime shot at the heavyweight title against the reigning champion."
+  },
+  {
+    "id": 194,
+    "title": "Moneyball",
+    "year": 2011,
+    "genres": [
+      "Sport",
+      "Biography",
+      "Drama"
+    ],
+    "director": "Bennett Miller",
+    "rating": 7.6,
+    "runtime": 133,
+    "description": "A struggling baseball team's general manager builds a competitive roster using an unconventional, data-driven approach."
+  },
+  {
+    "id": 195,
+    "title": "The Blind Side",
+    "year": 2009,
+    "genres": [
+      "Sport",
+      "Biography",
+      "Drama"
+    ],
+    "director": "John Lee Hancock",
+    "rating": 7.6,
+    "runtime": 129,
+    "description": "A homeless teenager is taken in by a wealthy family who help him become one of the most sought-after football players in the country."
+  },
+  {
+    "id": 196,
+    "title": "Miracle",
+    "year": 2004,
+    "genres": [
+      "Sport",
+      "Drama",
+      "History"
+    ],
+    "director": "Gavin O'Connor",
+    "rating": 7.6,
+    "runtime": 135,
+    "description": "A college hockey coach molds a group of amateur players into a team capable of defeating the seemingly invincible Soviet squad."
+  },
+  {
+    "id": 197,
+    "title": "Creed",
+    "year": 2015,
+    "genres": [
+      "Sport",
+      "Drama"
+    ],
+    "director": "Ryan Coogler",
+    "rating": 7.6,
+    "runtime": 133,
+    "description": "The son of a legendary boxer seeks out his father's greatest rival to help him make his own name in the ring."
+  },
+  {
+    "id": 198,
+    "title": "Warrior",
+    "year": 2011,
+    "genres": [
+      "Sport",
+      "Drama"
+    ],
+    "director": "Gavin O'Connor",
+    "rating": 8.1,
+    "runtime": 140,
+    "description": "Two estranged brothers, one a soldier and one a teacher, find themselves on a collision course as competitors in a mixed martial arts tournament."
+  },
+  {
+    "id": 199,
+    "title": "The Good, the Bad and the Ugly",
+    "year": 1966,
+    "genres": [
+      "Western"
+    ],
+    "director": "Sergio Leone",
+    "rating": 8.8,
+    "runtime": 178,
+    "description": "Three gunslingers compete to find a fortune in buried Confederate gold during the chaos of the American Civil War."
+  },
+  {
+    "id": 200,
+    "title": "Unforgiven",
+    "year": 1992,
+    "genres": [
+      "Western",
+      "Drama"
+    ],
+    "director": "Clint Eastwood",
+    "rating": 8.2,
+    "runtime": 130,
+    "description": "A retired gunslinger reluctantly takes one last job, forced to confront the violent legacy he's tried to leave behind."
+  },
+  {
+    "id": 201,
+    "title": "True Grit",
+    "year": 2010,
+    "genres": [
+      "Western",
+      "Drama"
+    ],
+    "director": "Joel Coen, Ethan Coen",
+    "rating": 7.6,
+    "runtime": 110,
+    "description": "A determined young girl hires a boozy U.S. Marshal to help her track down her father's killer through Indian territory."
+  },
+  {
+    "id": 202,
+    "title": "The Revenant",
+    "year": 2015,
+    "genres": [
+      "Western",
+      "Adventure",
+      "Drama"
+    ],
+    "director": "Alejandro G. Inarritu",
+    "rating": 8.0,
+    "runtime": 156,
+    "description": "A frontiersman left for dead by his hunting party fights to survive and seek revenge in the unforgiving wilderness."
+  },
+  {
+    "id": 203,
+    "title": "Butch Cassidy and the Sundance Kid",
+    "year": 1969,
+    "genres": [
+      "Western",
+      "Biography",
+      "Crime"
+    ],
+    "director": "George Roy Hill",
+    "rating": 8.0,
+    "runtime": 110,
+    "description": "Two outlaws flee to South America after a string of train robberies makes them the target of a relentless posse."
+  },
+  {
+    "id": 204,
+    "title": "Home Alone",
+    "year": 1990,
+    "genres": [
+      "Family",
+      "Comedy"
+    ],
+    "director": "Chris Columbus",
+    "rating": 7.7,
+    "runtime": 103,
+    "description": "An eight-year-old boy accidentally left behind by his family at Christmas must defend his house from two bumbling burglars."
+  },
+  {
+    "id": 205,
+    "title": "E.T. the Extra-Terrestrial",
+    "year": 1982,
+    "genres": [
+      "Family",
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "director": "Steven Spielberg",
+    "rating": 7.9,
+    "runtime": 115,
+    "description": "A lonely boy befriends a stranded alien and helps him find a way back home before government agents can find him first."
+  },
+  {
+    "id": 206,
+    "title": "The Sandlot",
+    "year": 1993,
+    "genres": [
+      "Family",
+      "Comedy"
+    ],
+    "director": "David Mickey Evans",
+    "rating": 7.8,
+    "runtime": 101,
+    "description": "A group of neighborhood boys spend an unforgettable summer playing baseball and chasing down a legendary fence-guarding dog."
+  },
+  {
+    "id": 207,
+    "title": "Paddington 2",
+    "year": 2017,
+    "genres": [
+      "Family",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "Paul King",
+    "rating": 7.8,
+    "runtime": 103,
+    "description": "A polite young bear must clear his name after being wrongly imprisoned for a theft he didn't commit."
+  },
+  {
+    "id": 208,
+    "title": "Matilda",
+    "year": 1996,
+    "genres": [
+      "Family",
+      "Comedy",
+      "Fantasy"
+    ],
+    "director": "Danny DeVito",
+    "rating": 7.3,
+    "runtime": 98,
+    "description": "A gifted young girl with telekinetic powers uses her abilities to stand up to her neglectful parents and tyrannical headmistress."
+  },
+  {
+    "id": 209,
+    "title": "Charlie and the Chocolate Factory",
+    "year": 2005,
+    "genres": [
+      "Family",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "Tim Burton",
+    "rating": 6.7,
+    "runtime": 115,
+    "description": "A poor boy wins a golden ticket to tour the strange and wondrous chocolate factory of an eccentric candy maker."
+  },
+  {
+    "id": 210,
+    "title": "Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+    "year": 2005,
+    "genres": [
+      "Family",
+      "Adventure",
+      "Fantasy"
+    ],
+    "director": "Andrew Adamson",
+    "rating": 6.9,
+    "runtime": 143,
+    "description": "Four siblings discover a magical land trapped in eternal winter and join a quest to free it from an evil queen."
+  },
+  {
+    "id": 211,
+    "title": "Willy Wonka & the Chocolate Factory",
+    "year": 1971,
+    "genres": [
+      "Family",
+      "Fantasy",
+      "Comedy"
+    ],
+    "director": "Mel Stuart",
+    "rating": 7.8,
+    "runtime": 100,
+    "description": "A poor boy's golden ticket wins him a tour through the strange and wondrous chocolate factory of a reclusive candy maker."
+  },
+  {
+    "id": 212,
+    "title": "Back to the Future",
+    "year": 1985,
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "director": "Robert Zemeckis",
+    "rating": 8.5,
+    "runtime": 116,
+    "description": "A teenager is accidentally sent thirty years into the past in a time-traveling car built by his eccentric scientist friend."
+  },
+  {
+    "id": 213,
+    "title": "The Goonies",
+    "year": 1985,
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Family"
+    ],
+    "director": "Richard Donner",
+    "rating": 7.7,
+    "runtime": 114,
+    "description": "A group of misfit kids uncover an old treasure map and set off on an adventure to save their neighborhood from foreclosure."
+  },
+  {
+    "id": 214,
+    "title": "City of God",
+    "year": 2002,
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "director": "Fernando Meirelles, Katia Lund",
+    "rating": 8.6,
+    "runtime": 130,
+    "description": "Two boys growing up in a violent Rio de Janeiro favela take vastly different paths, one into photography, the other into crime."
+  },
+  {
+    "id": 215,
+    "title": "Life Is Beautiful",
+    "year": 1997,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Roberto Benigni",
+    "rating": 8.6,
+    "runtime": 116,
+    "description": "A father uses humor and imagination to shield his young son from the horrors of a Nazi concentration camp."
+  },
+  {
+    "id": 216,
+    "title": "Cinema Paradiso",
+    "year": 1988,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Giuseppe Tornatore",
+    "rating": 8.5,
+    "runtime": 155,
+    "description": "A filmmaker recalls his childhood friendship with the projectionist at his small village's movie theater."
+  },
+  {
+    "id": 217,
+    "title": "Oldboy",
+    "year": 2003,
+    "genres": [
+      "Action",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Park Chan-wook",
+    "rating": 8.4,
+    "runtime": 120,
+    "description": "A man seeks vengeance after being inexplicably imprisoned for fifteen years, then suddenly released without explanation."
+  },
+  {
+    "id": 218,
+    "title": "Amores Perros",
+    "year": 2000,
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Alejandro G. Inarritu",
+    "rating": 8.1,
+    "runtime": 154,
+    "description": "Three interconnected stories in Mexico City collide around a single devastating car crash."
+  },
+  {
+    "id": 219,
+    "title": "The Lives of Others",
+    "year": 2006,
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Florian Henckel von Donnersmarck",
+    "rating": 8.4,
+    "runtime": 137,
+    "description": "An East German secret police agent becomes increasingly absorbed in the lives of the artists he's surveilling."
+  },
+  {
+    "id": 220,
+    "title": "A Separation",
+    "year": 2011,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Asghar Farhadi",
+    "rating": 8.3,
+    "runtime": 123,
+    "description": "A couple's divorce proceedings become entangled with a caregiving dispute that spirals into a complex moral and legal battle."
+  },
+  {
+    "id": 221,
+    "title": "Roma",
+    "year": 2018,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Alfonso Cuaron",
+    "rating": 7.7,
+    "runtime": 135,
+    "description": "A live-in housekeeper for a middle-class family in 1970s Mexico City navigates upheaval both personal and political."
+  },
+  {
+    "id": 222,
+    "title": "The Handmaiden",
+    "year": 2016,
+    "genres": [
+      "Drama",
+      "Romance",
+      "Thriller"
+    ],
+    "director": "Park Chan-wook",
+    "rating": 8.1,
+    "runtime": 145,
+    "description": "A con man's elaborate plot to swindle an heiress is complicated by an unexpected and dangerous attraction."
+  },
+  {
+    "id": 223,
+    "title": "Lost in Translation",
+    "year": 2003,
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Sofia Coppola",
+    "rating": 7.7,
+    "runtime": 102,
+    "description": "A fading movie star and a neglected young wife form an unexpected bond during a sleepless stay in Tokyo."
+  },
+  {
+    "id": 224,
+    "title": "Juno",
+    "year": 2007,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Jason Reitman",
+    "rating": 7.4,
+    "runtime": 96,
+    "description": "A sharp-witted teenager navigates an unplanned pregnancy with humor, resilience, and the support of an unlikely community."
+  },
+  {
+    "id": 225,
+    "title": "The Perks of Being a Wallflower",
+    "year": 2012,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Stephen Chbosky",
+    "rating": 8.0,
+    "runtime": 103,
+    "description": "An introverted freshman finds his place in the world with the help of two eccentric seniors who welcome him into their circle."
+  },
+  {
+    "id": 226,
+    "title": "Eighth Grade",
+    "year": 2018,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Bo Burnham",
+    "rating": 7.4,
+    "runtime": 94,
+    "description": "A painfully shy teenager tries to survive the final week of middle school while grappling with anxiety and the pressures of social media."
+  },
+  {
+    "id": 227,
+    "title": "Little Women",
+    "year": 2019,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Greta Gerwig",
+    "rating": 7.8,
+    "runtime": 135,
+    "description": "Four sisters navigate love, ambition, and independence in the years following the Civil War."
+  },
+  {
+    "id": 228,
+    "title": "Lady Bird",
+    "year": 2017,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Greta Gerwig",
+    "rating": 7.4,
+    "runtime": 94,
+    "description": "A strong-willed high school senior navigates a turbulent relationship with her mother during her final year in Sacramento."
+  },
+  {
+    "id": 229,
+    "title": "The Farewell",
+    "year": 2019,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Lulu Wang",
+    "rating": 7.5,
+    "runtime": 100,
+    "description": "A Chinese-American woman returns home to find her entire family hiding her grandmother's terminal diagnosis from her."
+  },
+  {
+    "id": 230,
+    "title": "Call Me by Your Name",
+    "year": 2017,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Luca Guadagnino",
+    "rating": 7.8,
+    "runtime": 132,
+    "description": "A seventeen-year-old spends a transformative summer falling in love with his father's charismatic research assistant in Italy."
+  },
+  {
+    "id": 231,
+    "title": "Brooklyn",
+    "year": 2015,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "John Crowley",
+    "rating": 7.5,
+    "runtime": 111,
+    "description": "A young Irish immigrant builds a new life in 1950s New York, only to be torn between two countries and two loves."
+  },
+  {
+    "id": 232,
+    "title": "The King's Speech",
+    "year": 2010,
+    "genres": [
+      "Drama",
+      "Biography",
+      "History"
+    ],
+    "director": "Tom Hooper",
+    "rating": 8.0,
+    "runtime": 118,
+    "description": "A reluctant king struggling with a debilitating stutter works with an unconventional speech therapist to find his voice."
+  },
+  {
+    "id": 233,
+    "title": "Inglourious Basterds",
+    "year": 2009,
+    "genres": [
+      "War",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Quentin Tarantino",
+    "rating": 8.3,
+    "runtime": 153,
+    "description": "A team of Jewish-American soldiers and a vengeful cinema owner both plot to bring down the Nazi high command from opposite directions."
+  },
+  {
+    "id": 234,
+    "title": "V for Vendetta",
+    "year": 2005,
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "James McTeigue",
+    "rating": 8.1,
+    "runtime": 132,
+    "description": "A masked vigilante wages a one-man war against a totalitarian government in a dystopian future Britain."
+  },
+  {
+    "id": 235,
+    "title": "Kingsman: The Secret Service",
+    "year": 2014,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "Matthew Vaughn",
+    "rating": 7.7,
+    "runtime": 129,
+    "description": "A veteran spy recruits a street-smart young man into an elite, ultra-secretive independent intelligence agency."
+  },
+  {
+    "id": 236,
+    "title": "The Equalizer",
+    "year": 2014,
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "Antoine Fuqua",
+    "rating": 7.2,
+    "runtime": 132,
+    "description": "A former black-ops operative comes out of quiet retirement to protect a young woman from a brutal crime syndicate."
+  },
+  {
+    "id": 237,
+    "title": "Sicario",
+    "year": 2015,
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "director": "Denis Villeneuve",
+    "rating": 7.6,
+    "runtime": 121,
+    "description": "An idealistic FBI agent is drawn into the murky underworld of the US-Mexico drug war by a task force operating outside the law."
+  },
+  {
+    "id": 238,
+    "title": "Extraction",
+    "year": 2020,
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "director": "Sam Hargrave",
+    "rating": 6.8,
+    "runtime": 116,
+    "description": "A black-market mercenary is hired to rescue a kidnapped crime lord's son from a rival gang."
+  },
+  {
+    "id": 239,
+    "title": "The Man from U.N.C.L.E.",
+    "year": 2015,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "Guy Ritchie",
+    "rating": 7.3,
+    "runtime": 116,
+    "description": "A CIA agent and a KGB operative are forced to put aside their rivalry to stop a criminal organization from building a nuclear weapon."
+  },
+  {
+    "id": 240,
+    "title": "Snatch",
+    "year": 2000,
+    "genres": [
+      "Crime",
+      "Comedy"
+    ],
+    "director": "Guy Ritchie",
+    "rating": 8.2,
+    "runtime": 104,
+    "description": "A stolen diamond sets off a chaotic chain of collisions between boxing promoters, gangsters, and a small-time jeweler."
+  },
+  {
+    "id": 241,
+    "title": "Lock, Stock and Two Smoking Barrels",
+    "year": 1998,
+    "genres": [
+      "Crime",
+      "Comedy"
+    ],
+    "director": "Guy Ritchie",
+    "rating": 8.1,
+    "runtime": 107,
+    "description": "Four friends who owe a massive debt to a crime boss scheme to rob their neighboring drug dealers to pay it off."
+  },
+  {
+    "id": 242,
+    "title": "Collateral",
+    "year": 2004,
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "director": "Michael Mann",
+    "rating": 7.5,
+    "runtime": 120,
+    "description": "A cab driver's night takes a dangerous turn when his passenger turns out to be a contract killer working through a list of targets."
+  },
+  {
+    "id": 243,
+    "title": "Spider-Man: Across the Spider-Verse",
+    "year": 2023,
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "director": "Joaquim Dos Santos, Kemp Powers, Justin K. Thompson",
+    "rating": 8.6,
+    "runtime": 140,
+    "description": "A young hero travels across the multiverse, only to clash with a team of Spider-People over how to handle a looming threat."
+  },
+  {
+    "id": 244,
+    "title": "Kung Fu Panda",
+    "year": 2008,
+    "genres": [
+      "Animation",
+      "Action",
+      "Comedy"
+    ],
+    "director": "Mark Osborne, John Stevenson",
+    "rating": 7.6,
+    "runtime": 92,
+    "description": "An overweight, clumsy panda is improbably chosen to fulfill an ancient prophecy as a legendary kung fu warrior."
+  },
+  {
+    "id": 245,
+    "title": "Big Hero 6",
+    "year": 2014,
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "director": "Don Hall, Chris Williams",
+    "rating": 7.8,
+    "runtime": 102,
+    "description": "A young robotics prodigy and his inflatable healthcare robot form a superhero team to catch a masked villain."
+  },
+  {
+    "id": 246,
+    "title": "Moana",
+    "year": 2016,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Family"
+    ],
+    "director": "Ron Clements, John Musker",
+    "rating": 7.6,
+    "runtime": 107,
+    "description": "A chief's daughter sets sail across the ocean to save her island, teaming up with a legendary but faded demigod."
+  },
+  {
+    "id": 247,
+    "title": "Frozen",
+    "year": 2013,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Family"
+    ],
+    "director": "Chris Buck, Jennifer Lee",
+    "rating": 7.4,
+    "runtime": 102,
+    "description": "A princess sets off to find her estranged sister, whose icy powers have accidentally trapped their kingdom in eternal winter."
+  },
+  {
+    "id": 248,
+    "title": "The Nightmare Before Christmas",
+    "year": 1993,
+    "genres": [
+      "Animation",
+      "Fantasy",
+      "Family"
+    ],
+    "director": "Henry Selick",
+    "rating": 7.9,
+    "runtime": 76,
+    "description": "The king of Halloween Town stumbles upon Christmas Town and decides to take over the holiday, with chaotic results."
+  },
+  {
+    "id": 249,
+    "title": "Fantastic Mr. Fox",
+    "year": 2009,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "Wes Anderson",
+    "rating": 7.9,
+    "runtime": 87,
+    "description": "A charming but reckless fox's return to poultry thievery puts his family and an entire community of animals at risk."
+  },
+  {
+    "id": 250,
+    "title": "Kubo and the Two Strings",
+    "year": 2016,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Fantasy"
+    ],
+    "director": "Travis Knight",
+    "rating": 7.6,
+    "runtime": 101,
+    "description": "A young boy with magical storytelling powers embarks on a quest to find a suit of armor to defeat vengeful spirits from his past."
+  },
+  {
+    "id": 251,
+    "title": "Toy Story 3",
+    "year": 2010,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "Lee Unkrich",
+    "rating": 8.3,
+    "runtime": 103,
+    "description": "As their owner leaves for college, a group of beloved toys is accidentally donated to a daycare with a tyrannical ruling bear."
+  },
+  {
+    "id": 252,
+    "title": "Song of the Sea",
+    "year": 2014,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Family"
+    ],
+    "director": "Tomm Moore",
+    "rating": 7.9,
+    "runtime": 93,
+    "description": "A young boy and his mute sister discover she is a mythical selkie destined to free the fairy folk trapped by an old curse."
+  },
+  {
+    "id": 253,
+    "title": "Being John Malkovich",
+    "year": 1999,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Fantasy"
+    ],
+    "director": "Spike Jonze",
+    "rating": 7.7,
+    "runtime": 113,
+    "description": "A puppeteer discovers a portal that leads directly into the mind of a famous actor, with strange and hilarious consequences."
+  },
+  {
+    "id": 254,
+    "title": "Adaptation",
+    "year": 2002,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Spike Jonze",
+    "rating": 7.7,
+    "runtime": 115,
+    "description": "A screenwriter struggles to adapt a challenging book while his twin brother effortlessly breaks into the same industry."
+  },
+  {
+    "id": 255,
+    "title": "Trainspotting",
+    "year": 1996,
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "director": "Danny Boyle",
+    "rating": 8.1,
+    "runtime": 94,
+    "description": "A group of heroin addicts in Edinburgh navigate friendship, addiction, and the fleeting pull of a better life."
+  },
+  {
+    "id": 256,
+    "title": "Slumdog Millionaire",
+    "year": 2008,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Danny Boyle",
+    "rating": 8.0,
+    "runtime": 120,
+    "description": "A young man from the slums of Mumbai becomes a suspect after answering every question correctly on a game show."
+  },
+  {
+    "id": 257,
+    "title": "Snowpiercer",
+    "year": 2013,
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "director": "Bong Joon-ho",
+    "rating": 7.1,
+    "runtime": 126,
+    "description": "The last survivors of a frozen world live aboard a perpetually moving train divided by a brutal class system."
+  },
+  {
+    "id": 258,
+    "title": "Okja",
+    "year": 2017,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "director": "Bong Joon-ho",
+    "rating": 7.3,
+    "runtime": 120,
+    "description": "A young girl sets out to rescue her genetically engineered best friend from the corporation that wants to slaughter it."
+  },
+  {
+    "id": 259,
+    "title": "Memories of Murder",
+    "year": 2003,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Bong Joon-ho",
+    "rating": 8.1,
+    "runtime": 132,
+    "description": "Detectives in a small Korean town struggle to catch an elusive serial killer terrorizing the community."
+  },
+  {
+    "id": 260,
+    "title": "Burning",
+    "year": 2018,
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Lee Chang-dong",
+    "rating": 7.5,
+    "runtime": 148,
+    "description": "A young delivery worker's reunion with a childhood friend takes a dark turn when she introduces him to her wealthy, enigmatic companion."
+  },
+  {
+    "id": 261,
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "year": 2003,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "director": "Gore Verbinski",
+    "rating": 8.1,
+    "runtime": 143,
+    "description": "A blacksmith teams up with an eccentric pirate captain to rescue the governor's daughter from a crew of cursed buccaneers."
+  },
+  {
+    "id": 262,
+    "title": "Monsters, Inc.",
+    "year": 2001,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "Pete Docter, David Silverman",
+    "rating": 8.1,
+    "runtime": 92,
+    "description": "Two monster co-workers who scare children for a living discover a little girl has wandered into their world."
+  },
+  {
+    "id": 263,
+    "title": "Bird Box",
+    "year": 2018,
+    "genres": [
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "director": "Susanne Bier",
+    "rating": 6.6,
+    "runtime": 124,
+    "description": "A woman and two children must navigate a dangerous river blindfolded to escape creatures that drive anyone who sees them to violence."
+  },
+  {
+    "id": 264,
+    "title": "World War Z",
+    "year": 2013,
+    "genres": [
+      "Action",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "director": "Marc Forster",
+    "rating": 7.0,
+    "runtime": 116,
+    "description": "A former UN investigator races around the globe to find a way to stop a pandemic that is rapidly turning humanity into the undead."
+  },
+  {
+    "id": 265,
+    "title": "I Am Legend",
+    "year": 2007,
+    "genres": [
+      "Drama",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "director": "Francis Lawrence",
+    "rating": 7.2,
+    "runtime": 101,
+    "description": "A scientist believes he may be the last uninfected human in a New York City overrun by the infected after a failed cure for cancer."
+  },
+  {
+    "id": 266,
+    "title": "Contagion",
+    "year": 2011,
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Steven Soderbergh",
+    "rating": 6.6,
+    "runtime": 106,
+    "description": "Doctors, scientists, and government officials race to contain a rapidly spreading and deadly airborne virus."
+  },
+  {
+    "id": 267,
+    "title": "The Martian",
+    "year": 2015,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "director": "Ridley Scott",
+    "rating": 8.0,
+    "runtime": 144,
+    "description": "An astronaut is presumed dead and left behind on Mars, and must use his ingenuity to survive until a rescue mission can reach him."
+  },
+  {
+    "id": 268,
+    "title": "Gravity",
+    "year": 2013,
+    "genres": [
+      "Drama",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "director": "Alfonso Cuaron",
+    "rating": 7.7,
+    "runtime": 91,
+    "description": "Two astronauts are stranded in space after debris destroys their shuttle, forcing a desperate fight to get back to Earth."
+  },
+  {
+    "id": 269,
+    "title": "Passengers",
+    "year": 2016,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Morten Tyldum",
+    "rating": 7.0,
+    "runtime": 116,
+    "description": "Two passengers on a colony ship wake from suspended animation ninety years too early, with only each other for company."
+  },
+  {
+    "id": 270,
+    "title": "Elysium",
+    "year": 2013,
+    "genres": [
+      "Action",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "director": "Neill Blomkamp",
+    "rating": 6.6,
+    "runtime": 109,
+    "description": "In a future where the wealthy live on a luxurious space station, a factory worker fights for a chance to access its life-saving technology."
+  },
+  {
+    "id": 271,
+    "title": "Ready Player One",
+    "year": 2018,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "director": "Steven Spielberg",
+    "rating": 7.4,
+    "runtime": 140,
+    "description": "In a bleak future, a young man competes in a virtual reality contest to inherit the fortune and control of its late creator."
+  },
+  {
+    "id": 272,
+    "title": "Tenet",
+    "year": 2020,
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "director": "Christopher Nolan",
+    "rating": 7.3,
+    "runtime": 150,
+    "description": "A secret agent armed with the ability to manipulate the flow of time works to prevent a catastrophic assault on the present."
+  },
+  {
+    "id": 273,
+    "title": "Annihilation",
+    "year": 2018,
+    "genres": [
+      "Sci-Fi",
+      "Horror",
+      "Mystery"
+    ],
+    "director": "Alex Garland",
+    "rating": 6.8,
+    "runtime": 115,
+    "description": "A biologist joins an expedition into a mysterious, mutating zone where the laws of nature no longer seem to apply."
+  },
+  {
+    "id": 274,
+    "title": "Coherence",
+    "year": 2013,
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "James Ward Byrkit",
+    "rating": 7.2,
+    "runtime": 89,
+    "description": "A dinner party spirals into chaos when a passing comet causes strange, reality-bending events among the guests."
+  },
+  {
+    "id": 275,
+    "title": "Primer",
+    "year": 2004,
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Shane Carruth",
+    "rating": 6.9,
+    "runtime": 77,
+    "description": "Two engineers accidentally build a time machine in their garage, and quickly lose control of the consequences."
+  },
+  {
+    "id": 276,
+    "title": "Moon",
+    "year": 2009,
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "director": "Duncan Jones",
+    "rating": 7.8,
+    "runtime": 97,
+    "description": "A lone astronaut nearing the end of a solitary three-year contract on the moon begins to question everything about his mission."
+  },
+  {
+    "id": 277,
+    "title": "Source Code",
+    "year": 2011,
+    "genres": [
+      "Action",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "director": "Duncan Jones",
+    "rating": 7.5,
+    "runtime": 93,
+    "description": "A soldier repeatedly relives the final minutes of a train bombing in the body of another man, trying to identify the culprit."
+  },
+  {
+    "id": 278,
+    "title": "Predestination",
+    "year": 2014,
+    "genres": [
+      "Sci-Fi",
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Michael Spierig, Peter Spierig",
+    "rating": 7.5,
+    "runtime": 97,
+    "description": "A time-traveling agent takes on one final, deeply personal assignment to stop a bomber who has eluded him his entire career."
+  },
+  {
+    "id": 279,
+    "title": "Chappie",
+    "year": 2015,
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "director": "Neill Blomkamp",
+    "rating": 6.8,
+    "runtime": 120,
+    "description": "A stolen police robot is reprogrammed to think and feel for itself, drawing the attention of both criminals and the military."
+  },
+  {
+    "id": 280,
+    "title": "Pacific Rim",
+    "year": 2013,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "director": "Guillermo del Toro",
+    "rating": 7.0,
+    "runtime": 132,
+    "description": "Giant robots piloted by paired humans are humanity's last defense against enormous monsters rising from the depths of the ocean."
+  },
+  {
+    "id": 281,
+    "title": "The Shape of Water",
+    "year": 2017,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
+    "director": "Guillermo del Toro",
+    "rating": 7.3,
+    "runtime": 123,
+    "description": "A mute cleaning woman at a secret government facility forms an unlikely bond with an amphibious creature held captive there."
+  },
+  {
+    "id": 282,
+    "title": "Crimson Peak",
+    "year": 2015,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Horror"
+    ],
+    "director": "Guillermo del Toro",
+    "rating": 6.5,
+    "runtime": 119,
+    "description": "A young author moves into her new husband's crumbling ancestral mansion, where dark secrets and restless spirits await."
+  },
+  {
+    "id": 283,
+    "title": "Hellboy",
+    "year": 2004,
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Horror"
+    ],
+    "director": "Guillermo del Toro",
+    "rating": 6.8,
+    "runtime": 122,
+    "description": "A demon raised from infancy by a secret government agency grows up to battle the forces of darkness he was destined to join."
+  },
+  {
+    "id": 284,
+    "title": "Nightmare Alley",
+    "year": 2021,
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Guillermo del Toro",
+    "rating": 6.7,
+    "runtime": 150,
+    "description": "An ambitious carnival worker rises through the ranks of a traveling sideshow before a cunning psychiatrist proves his own match."
+  },
+  {
+    "id": 285,
+    "title": "La Haine",
+    "year": 1995,
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "director": "Mathieu Kassovitz",
+    "rating": 8.1,
+    "runtime": 98,
+    "description": "Three friends in a rough Paris suburb spend twenty-four tense hours in the aftermath of a riot sparked by police violence."
+  },
+  {
+    "id": 286,
+    "title": "Y Tu Mama Tambien",
+    "year": 2001,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Alfonso Cuaron",
+    "rating": 7.6,
+    "runtime": 106,
+    "description": "Two teenage friends and an older woman set off on a spontaneous road trip that reshapes all three of their lives."
+  },
+  {
+    "id": 287,
+    "title": "Central Station",
+    "year": 1998,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Walter Salles",
+    "rating": 7.9,
+    "runtime": 110,
+    "description": "A jaded former teacher reluctantly helps a young orphan boy search for the father he has never met across Brazil."
+  },
+  {
+    "id": 288,
+    "title": "The Battle of Algiers",
+    "year": 1966,
+    "genres": [
+      "Drama",
+      "War",
+      "History"
+    ],
+    "director": "Gillo Pontecorvo",
+    "rating": 8.1,
+    "runtime": 121,
+    "description": "A docudrama chronicles the escalating guerrilla conflict between revolutionaries and colonial forces in 1950s Algiers."
+  },
+  {
+    "id": 289,
+    "title": "Seven Samurai",
+    "year": 1954,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "director": "Akira Kurosawa",
+    "rating": 8.6,
+    "runtime": 207,
+    "description": "A poor farming village hires seven masterless samurai to defend them from a band of marauding bandits."
+  },
+  {
+    "id": 290,
+    "title": "Rashomon",
+    "year": 1950,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Akira Kurosawa",
+    "rating": 8.2,
+    "runtime": 88,
+    "description": "Four witnesses give conflicting accounts of a samurai's murder and his wife's assault in the forest."
+  },
+  {
+    "id": 291,
+    "title": "Ikiru",
+    "year": 1952,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Akira Kurosawa",
+    "rating": 8.3,
+    "runtime": 143,
+    "description": "A terminally ill bureaucrat searches for meaning in his remaining days after a lifetime of quiet routine."
+  },
+  {
+    "id": 292,
+    "title": "Ponyo",
+    "year": 2008,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Family"
+    ],
+    "director": "Hayao Miyazaki",
+    "rating": 7.7,
+    "runtime": 101,
+    "description": "A young goldfish princess longs to become human after being rescued by a kind five-year-old boy."
+  },
+  {
+    "id": 293,
+    "title": "The Wind Rises",
+    "year": 2013,
+    "genres": [
+      "Animation",
+      "Biography",
+      "Drama"
+    ],
+    "director": "Hayao Miyazaki",
+    "rating": 7.8,
+    "runtime": 126,
+    "description": "An aircraft designer's lifelong dream of flight collides with the looming shadow of war in 1930s Japan."
+  },
+  {
+    "id": 294,
+    "title": "Grave of the Fireflies",
+    "year": 1988,
+    "genres": [
+      "Animation",
+      "Drama",
+      "War"
+    ],
+    "director": "Isao Takahata",
+    "rating": 8.5,
+    "runtime": 89,
+    "description": "A teenage boy and his younger sister struggle to survive in the devastating final months of World War II Japan."
+  },
+  {
+    "id": 295,
+    "title": "Synecdoche, New York",
+    "year": 2008,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Charlie Kaufman",
+    "rating": 7.5,
+    "runtime": 124,
+    "description": "A theater director embarks on an increasingly vast and personal production that begins to blur the line between his life and his art."
+  },
+  {
+    "id": 296,
+    "title": "I'm Thinking of Ending Things",
+    "year": 2020,
+    "genres": [
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Charlie Kaufman",
+    "rating": 6.5,
+    "runtime": 134,
+    "description": "A woman having doubts about her new boyfriend embarks on a road trip to meet his parents at their remote farm."
+  },
+  {
+    "id": 297,
+    "title": "Melancholia",
+    "year": 2011,
+    "genres": [
+      "Drama",
+      "Sci-Fi"
+    ],
+    "director": "Lars von Trier",
+    "rating": 7.1,
+    "runtime": 136,
+    "description": "Two sisters' already fraught relationship is tested to the breaking point as a rogue planet hurtles toward a collision with Earth."
+  },
+  {
+    "id": 298,
+    "title": "Dogville",
+    "year": 2003,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Lars von Trier",
+    "rating": 8.0,
+    "runtime": 178,
+    "description": "A woman on the run finds refuge in a small mountain town, whose residents slowly begin to take advantage of her gratitude."
+  },
+  {
+    "id": 299,
+    "title": "The Lighthouse",
+    "year": 2019,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Horror"
+    ],
+    "director": "Robert Eggers",
+    "rating": 7.4,
+    "runtime": 109,
+    "description": "Two lighthouse keepers' isolation on a remote New England island gives way to paranoia, rivalry, and madness."
+  },
+  {
+    "id": 300,
+    "title": "The Northman",
+    "year": 2022,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "director": "Robert Eggers",
+    "rating": 7.0,
+    "runtime": 137,
+    "description": "A Viking prince sets out on a brutal quest for revenge after his father is murdered and his kingdom stolen."
+  },
+  {
+    "id": 301,
+    "title": "Drive",
+    "year": 2011,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Nicolas Winding Refn",
+    "rating": 7.8,
+    "runtime": 100,
+    "description": "A Hollywood stunt driver who moonlights as a getaway driver gets pulled into a violent robbery gone wrong to protect his neighbor."
+  },
+  {
+    "id": 302,
+    "title": "Only God Forgives",
+    "year": 2013,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Nicolas Winding Refn",
+    "rating": 5.6,
+    "runtime": 90,
+    "description": "An expatriate drug smuggler in Bangkok is pushed by his ruthless mother to avenge his brother's death."
+  },
+  {
+    "id": 303,
+    "title": "The Florida Project",
+    "year": 2017,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Sean Baker",
+    "rating": 7.6,
+    "runtime": 111,
+    "description": "A precocious six-year-old and her friends spend a vibrant summer in the shadow of a Florida resort, unaware of her mother's desperate struggles."
+  },
+  {
+    "id": 304,
+    "title": "Nomadland",
+    "year": 2020,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Chloe Zhao",
+    "rating": 7.3,
+    "runtime": 108,
+    "description": "A woman in her sixties embraces a nomadic life on the road after losing everything in the economic collapse of her Nevada town."
+  },
+  {
+    "id": 305,
+    "title": "The Rider",
+    "year": 2017,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Chloe Zhao",
+    "rating": 7.4,
+    "runtime": 104,
+    "description": "A young rodeo star must reckon with his identity and purpose after a near-fatal injury ends his riding career."
+  },
+  {
+    "id": 306,
+    "title": "Boyhood",
+    "year": 2014,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Richard Linklater",
+    "rating": 7.9,
+    "runtime": 165,
+    "description": "A boy's childhood and adolescence are captured on film over twelve real years, alongside his divorced parents and sister."
+  },
+  {
+    "id": 307,
+    "title": "Before Sunset",
+    "year": 2004,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Richard Linklater",
+    "rating": 8.1,
+    "runtime": 80,
+    "description": "Two former lovers reunite for one afternoon in Paris nearly a decade after their first unforgettable encounter."
+  },
+  {
+    "id": 308,
+    "title": "Before Midnight",
+    "year": 2013,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Richard Linklater",
+    "rating": 7.9,
+    "runtime": 109,
+    "description": "Nearly two decades after they first met, a couple confronts the everyday tensions and doubts of a long relationship on a Greek vacation."
+  },
+  {
+    "id": 309,
+    "title": "Dazed and Confused",
+    "year": 1993,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Richard Linklater",
+    "rating": 7.6,
+    "runtime": 102,
+    "description": "A sprawling ensemble of high schoolers navigates the last day of school and a wild night of parties in 1976 Texas."
+  },
+  {
+    "id": 310,
+    "title": "School of Rock",
+    "year": 2003,
+    "genres": [
+      "Comedy",
+      "Family",
+      "Music"
+    ],
+    "director": "Richard Linklater",
+    "rating": 7.1,
+    "runtime": 109,
+    "description": "A failed rock musician poses as a substitute teacher and secretly turns his class of gifted kids into a band."
+  },
+  {
+    "id": 311,
+    "title": "Punch-Drunk Love",
+    "year": 2002,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Paul Thomas Anderson",
+    "rating": 7.3,
+    "runtime": 95,
+    "description": "A socially awkward small business owner's chaotic life takes an unexpected turn when he falls for his sister's friend."
+  },
+  {
+    "id": 312,
+    "title": "Magnolia",
+    "year": 1999,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Paul Thomas Anderson",
+    "rating": 8.0,
+    "runtime": 188,
+    "description": "A mosaic of interconnected characters across the San Fernando Valley confront chance, coincidence, and forgiveness over one strange day."
+  },
+  {
+    "id": 313,
+    "title": "Boogie Nights",
+    "year": 1997,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Paul Thomas Anderson",
+    "rating": 7.9,
+    "runtime": 155,
+    "description": "A young dishwasher's rise to stardom in the 1970s adult film industry gives way to excess and unraveling in the decade that follows."
+  },
+  {
+    "id": 314,
+    "title": "Licorice Pizza",
+    "year": 2021,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Paul Thomas Anderson",
+    "rating": 7.2,
+    "runtime": 133,
+    "description": "A teenage actor and a directionless twenty-something forge an unlikely bond across a sun-drenched San Fernando Valley coming of age."
+  },
+  {
+    "id": 315,
+    "title": "The Dark Knight Rises",
+    "year": 2012,
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Christopher Nolan",
+    "rating": 8.4,
+    "runtime": 164,
+    "description": "Eight years after his disappearance, a masked mercenary threatens to bring Gotham to its knees, forcing a vigilante's return."
+  },
+  {
+    "id": 316,
+    "title": "Batman Begins",
+    "year": 2005,
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "director": "Christopher Nolan",
+    "rating": 8.2,
+    "runtime": 140,
+    "description": "A billionaire orphan is trained by a secret league of assassins before returning to Gotham to wage a one-man war on crime."
+  },
+  {
+    "id": 317,
+    "title": "Insomnia",
+    "year": 2002,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Christopher Nolan",
+    "rating": 7.2,
+    "runtime": 118,
+    "description": "A detective investigating a murder in a small Alaskan town where the sun never sets becomes consumed by guilt after a fatal mistake."
+  },
+  {
+    "id": 318,
+    "title": "Oppenheimer",
+    "year": 2023,
+    "genres": [
+      "Biography",
+      "Drama",
+      "History"
+    ],
+    "director": "Christopher Nolan",
+    "rating": 8.3,
+    "runtime": 180,
+    "description": "The story of the physicist who led the effort to build the first atomic bomb, and the moral reckoning that followed."
+  },
+  {
+    "id": 319,
+    "title": "Babylon",
+    "year": 2022,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "History"
+    ],
+    "director": "Damien Chazelle",
+    "rating": 7.2,
+    "runtime": 189,
+    "description": "An ensemble of dreamers and schemers rides the wild, decadent rise and ruin of Hollywood's transition from silent films to sound."
+  },
+  {
+    "id": 320,
+    "title": "First Man",
+    "year": 2018,
+    "genres": [
+      "Biography",
+      "Drama",
+      "History"
+    ],
+    "director": "Damien Chazelle",
+    "rating": 7.3,
+    "runtime": 141,
+    "description": "The story of the dangerous missions and personal sacrifices that led to Neil Armstrong becoming the first man to walk on the moon."
+  },
+  {
+    "id": 321,
+    "title": "The Trial of the Chicago 7",
+    "year": 2020,
+    "genres": [
+      "Drama",
+      "History",
+      "Thriller"
+    ],
+    "director": "Aaron Sorkin",
+    "rating": 7.8,
+    "runtime": 129,
+    "description": "Seven activists face a chaotic and politically charged trial after violent protests erupt at the 1968 Democratic National Convention."
+  },
+  {
+    "id": 322,
+    "title": "Molly's Game",
+    "year": 2017,
+    "genres": [
+      "Biography",
+      "Crime",
+      "Drama"
+    ],
+    "director": "Aaron Sorkin",
+    "rating": 7.4,
+    "runtime": 140,
+    "description": "A former Olympic-class skier builds and runs the world's most exclusive high-stakes underground poker game."
+  },
+  {
+    "id": 323,
+    "title": "A Few Good Men",
+    "year": 1992,
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Rob Reiner",
+    "rating": 7.7,
+    "runtime": 138,
+    "description": "Two military lawyers defend Marines accused of murder, uncovering a chain of command that may have ordered the killing."
+  },
+  {
+    "id": 324,
+    "title": "Stand By Me",
+    "year": 1986,
+    "genres": [
+      "Adventure",
+      "Drama"
+    ],
+    "director": "Rob Reiner",
+    "rating": 8.1,
+    "runtime": 89,
+    "description": "Four boys set off on a journey along the railroad tracks to find the body of a missing local teenager."
+  },
+  {
+    "id": 325,
+    "title": "Misery",
+    "year": 1990,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Horror"
+    ],
+    "director": "Rob Reiner",
+    "rating": 7.8,
+    "runtime": 107,
+    "description": "An injured novelist is held captive by his obsessive number one fan after a car crash strands him in a remote mountain cabin."
+  },
+  {
+    "id": 326,
+    "title": "This Is Spinal Tap",
+    "year": 1984,
+    "genres": [
+      "Comedy",
+      "Music"
+    ],
+    "director": "Rob Reiner",
+    "rating": 8.2,
+    "runtime": 82,
+    "description": "A fictional rock band's chaotic American tour is chronicled by a documentary crew, capturing every disastrous mishap along the way."
   }
 ]

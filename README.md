@@ -71,4 +71,3 @@ cd frontend && npm run dev
 - Deploy backend (Render/Railway) + frontend (Vercel/Netlify)
 
 Ratings, runtimes, and descriptions in the sample dataset are illustrative — swap in real data anytime.
-# movie-recommendation-app
