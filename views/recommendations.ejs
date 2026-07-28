@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MovieFlix | Recommended For You</title>
+
+    <link rel="stylesheet" href="/css/recommendations.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-film"></i>
+
+        MovieFlix
+
+    </div>
+
+    <ul>
+
+        <li><a href="/">Home</a></li>
+
+        <li><a href="/watchlist">Watchlist</a></li>
+
+        <li><a href="/history">History</a></li>
+
+        <li><a href="/profile">Profile</a></li>
+
+        <li><a href="/api/auth/logout">Logout</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- ================= HEADER ================= -->
+
+<section class="hero">
+
+    <h1>
+
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+        Recommended For You
+
+    </h1>
+
+    <p>
+
+        Personalized recommendations based on your watch history.
+
+    </p>
+
+</section>
+
+<!-- ================= FAVORITE GENRES ================= -->
+
+<section class="genres">
+
+    <h2>
+
+        <i class="fa-solid fa-heart"></i>
+
+        Your Favorite Genres
+
+    </h2>
+
+    <div class="genre-list">
+
+        <% if(favoriteGenres.length>0){ %>
+
+            <% favoriteGenres.forEach(genre=>{ %>
+
+                <span class="genre-tag">
+
+                    <%= genre.name %>
+
+                </span>
+
+            <% }) %>
+
+        <% } else { %>
+
+            <p>
+
+                Watch more movies to discover your favorite genres.
+
+            </p>
+
+        <% } %>
+
+    </div>
+
+</section>
+
+<!-- ================= MOVIES ================= -->
+
+<section class="recommendations">
+
+    <h2>
+
+        <i class="fa-solid fa-star"></i>
+
+        Movies You May Like
+
+    </h2>
+
+    <% if(recommendations.length>0){ %>
+
+    <div class="movie-grid">
+
+        <% recommendations.forEach(movie=>{ %>
+
+            <div class="movie-card">
+
+                <a href="/movie/<%= movie.id %>">
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
+                        alt="<%= movie.title %>">
+
+                </a>
+
+                <div class="movie-info">
+
+                    <h3>
+
+                        <%= movie.title %>
+
+                    </h3>
+
+                    <p>
+
+                        ⭐
+
+                        <%= movie.vote_average.toFixed(1) %>
+
+                    </p>
+
+                    <p>
+
+                        📅
+
+                        <%= movie.release_date %>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        <% }) %>
+
+    </div>
+
+    <% } else { %>
+
+    <div class="empty">
+
+        <i class="fa-solid fa-film"></i>
+
+        <h2>
+
+            No Recommendations Yet
+
+        </h2>
+
+        <p>
+
+            Start watching movies and we'll recommend the perfect ones for you.
+
+        </p>
+
+        <a href="/" class="browse-btn">
+
+            Browse Movies
+
+        </a>
+
+    </div>
+
+    <% } %>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 MovieFlix • Personalized Movie Recommendation System
+
+    </p>
+
+</footer>
+
+</body>
+
+</html>

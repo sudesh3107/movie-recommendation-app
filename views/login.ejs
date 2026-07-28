@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MovieFlix | Login</title>
+
+    <link rel="stylesheet" href="/css/login.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="left">
+
+        <div class="overlay">
+
+            <h1>🎬 MovieFlix</h1>
+
+            <p>
+
+                Discover thousands of movies,
+
+                build your personal watchlist
+
+                and enjoy your favourite films.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="right">
+
+        <form action="/api/auth/login" method="POST">
+
+            <h2>Welcome Back 👋</h2>
+
+            <p>Login to your account</p>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter Email"
+                    required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Enter Password"
+                    required>
+
+            </div>
+
+            <button type="submit">
+
+                Login
+
+            </button>
+
+            <div class="bottom">
+
+                Don't have an account?
+
+                <a href="/register">
+
+                    Register
+
+                </a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

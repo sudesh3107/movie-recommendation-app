@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MovieFlix</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-film"></i>
+        <h2>MovieFlix</h2>
+    </div>
+
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="/">Home</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#toprated">Top Rated</a></li>
+        <li><a href="#indian">Indian</a></li>
+        <li><a href="#nowplaying">Now Playing</a></li>
+
+        <% if(user){ %>
+
+            <li><a href="/watchlist">Watchlist</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/api/auth/logout">Logout</a></li>
+
+        <% } else { %>
+
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+
+        <% } %>
+
+    </ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-overlay">
+
+        <div class="hero-content">
+
+            <span class="tagline">
+                🎬 MovieFlix Originals
+            </span>
+
+            <h1>
+                Unlimited Movies,<br>
+                TV Shows & More.
+            </h1>
+
+            <p>
+                Discover Trending, Bollywood, Hollywood and thousands of
+                movies powered by TMDb.
+            </p>
+
+            <form action="/" method="GET" class="search-box">
+
+                <input
+                    type="text"
+                    name="search"
+                    placeholder="Search Movies..."
+                    value="<%= search %>">
+
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search
+                </button>
+
+            </form>
+
+            <div class="hero-buttons">
+
+                <a href="#trending" class="btn-primary">
+                    <i class="fa-solid fa-fire"></i>
+                    Explore Movies
+                </a>
+
+                <% if(user){ %>
+
+                    <a href="/watchlist" class="btn-secondary">
+                        <i class="fa-solid fa-bookmark"></i>
+                        My Watchlist
+                    </a>
+
+                <% } else { %>
+
+                    <a href="/register" class="btn-secondary">
+                        <i class="fa-solid fa-user-plus"></i>
+                        Join Now
+                    </a>
+
+                <% } %>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= SEARCH RESULTS ================= -->
+
+<% if(search){ %>
+
+<section id="movies">
+
+    <h2 class="section-title">
+        🔍 Search Results
+    </h2>
+
+    <div class="movie-grid">
+
+        <% if(movies.length > 0){ %>
+
+            <% movies.forEach(movie => { %>
+
+            <div class="movie-card">
+
+                <img
+                    src="<%= movie.poster_path ? 'https://image.tmdb.org/t/p/w500' + movie.poster_path : '/images/no-poster.png' %>"
+                    alt="<%= movie.title %>">
+
+                <div class="movie-info">
+
+                    <h3><%= movie.title %></h3>
+
+                    <p>⭐ <%= movie.vote_average.toFixed(1) %></p>
+
+                    <p>📅 <%= movie.release_date || 'N/A' %></p>
+
+                    <div class="buttons">
+
+                        <a href="/movie/<%= movie.id %>" class="details-btn">
+                            <i class="fa-solid fa-circle-info"></i>
+                            View Details
+                        </a>
+
+                        <form action="/watchlist/add" method="POST">
+
+                            <input type="hidden" name="movie_id" value="<%= movie.id %>">
+
+                            <input type="hidden" name="movie_title" value="<%= movie.title %>">
+
+                            <input type="hidden"
+                                   name="poster"
+                                   value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
+
+                            <button class="watch-btn">
+                                <i class="fa-solid fa-bookmark"></i>
+                                Watchlist
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <% }) %>
+
+        <% } else { %>
+
+            <h2 class="no-result">
+                No Movies Found
+            </h2>
+
+        <% } %>
+
+    </div>
+
+</section>
+
+<% } %>
+
+<!-- ================= TRENDING MOVIES ================= -->
+
+<section id="trending">
+
+    <h2 class="section-title">
+        🔥 Trending Movies
+    </h2>
+
+    <div class="movie-row">
+        <% trending.forEach(movie => { %>
+
+<div class="movie-card">
+
+    <img
+        src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
+        alt="<%= movie.title %>">
+
+    <div class="movie-info">
+
+        <h3><%= movie.title %></h3>
+
+        <p>⭐ <%= movie.vote_average.toFixed(1) %></p>
+
+        <div class="buttons">
+
+            <a href="/movie/<%= movie.id %>" class="details-btn">
+                <i class="fa-solid fa-circle-info"></i>
+                View Details
+            </a>
+
+            <form action="/watchlist/add" method="POST">
+
+                <input
+                    type="hidden"
+                    name="movie_id"
+                    value="<%= movie.id %>">
+
+                <input
+                    type="hidden"
+                    name="movie_title"
+                    value="<%= movie.title %>">
+
+                <input
+                    type="hidden"
+                    name="poster"
+                    value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
+
+                <button class="watch-btn">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Watchlist
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<% }) %>
+
+</div>
+
+</section>
+
+<!-- ================= TOP RATED ================= -->
+
+<section id="toprated">
+
+    <h2 class="section-title">
+        ⭐ Top Rated Movies
+    </h2>
+
+    <div class="movie-row">
+
+        <% topRated.forEach(movie => { %>
+
+        <div class="movie-card">
+
+            <img
+                src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
+                alt="<%= movie.title %>">
+
+            <div class="movie-info">
+
+                <h3><%= movie.title %></h3>
+
+                <p>⭐ <%= movie.vote_average.toFixed(1) %></p>
+
+                <div class="buttons">
+
+                    <a href="/movie/<%= movie.id %>" class="details-btn">
+                        <i class="fa-solid fa-circle-info"></i>
+                        View Details
+                    </a>
+
+                    <form action="/watchlist/add" method="POST">
+
+                        <input
+                            type="hidden"
+                            name="movie_id"
+                            value="<%= movie.id %>">
+
+                        <input
+                            type="hidden"
+                            name="movie_title"
+                            value="<%= movie.title %>">
+
+                        <input
+                            type="hidden"
+                            name="poster"
+                            value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
+
+                        <button class="watch-btn">
+                            <i class="fa-solid fa-bookmark"></i>
+                            Watchlist
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <% }) %>
+
+    </div>
+
+</section>
+
+<!-- ================= NOW PLAYING ================= -->
+
+<section id="nowplaying">
+
+    <h2 class="section-title">
+        🎬 Now Playing
+    </h2>
+
+    <div class="movie-row">
+
+        <% nowPlaying.forEach(movie => { %>
+
+<div class="movie-card">
+
+    <img
+        src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
+        alt="<%= movie.title %>">
+
+    <div class="movie-info">
+
+        <h3><%= movie.title %></h3>
+
+        <p>📅 <%= movie.release_date || "Coming Soon" %></p>
+
+        <div class="buttons">
+
+            <a href="/movie/<%= movie.id %>" class="details-btn">
+                <i class="fa-solid fa-circle-info"></i>
+                View Details
+            </a>
+
+            <form action="/watchlist/add" method="POST">
+
+                <input type="hidden" name="movie_id" value="<%= movie.id %>">
+
+                <input type="hidden" name="movie_title" value="<%= movie.title %>">
+
+                <input type="hidden"
+                       name="poster"
+                       value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
+
+                <button class="watch-btn">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Watchlist
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<% }) %>
+
+</div>
+
+</section>
+
+<!-- ================= INDIAN MOVIES ================= -->
+
+<section id="indian">
+
+    <h2 class="section-title">
+        🇮🇳 Indian Movies
+    </h2>
+
+    <div class="movie-row">
+
+        <% indianMovies.forEach(movie => { %>
+
+        <div class="movie-card">
+
+            <img
+                src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
+                alt="<%= movie.title %>">
+
+            <div class="movie-info">
+
+                <h3><%= movie.title %></h3>
+
+                <p>⭐ <%= movie.vote_average.toFixed(1) %></p>
+
+                <div class="buttons">
+
+                    <a href="/movie/<%= movie.id %>" class="details-btn">
+                        <i class="fa-solid fa-circle-info"></i>
+                        View Details
+                    </a>
+
+                    <form action="/watchlist/add" method="POST">
+
+                        <input type="hidden" name="movie_id" value="<%= movie.id %>">
+
+                        <input type="hidden" name="movie_title" value="<%= movie.title %>">
+
+                        <input type="hidden"
+                               name="poster"
+                               value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
+
+                        <button class="watch-btn">
+                            <i class="fa-solid fa-bookmark"></i>
+                            Watchlist
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <% }) %>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>🎬 MovieFlix</h2>
+
+        <p>
+            Your Ultimate Movie Recommendation Platform
+        </p>
+
+        <p>
+            Built with ❤️ using Node.js, Express, MySQL & TMDb API
+        </p>
+
+        <div class="footer-links">
+
+            <a href="/">Home</a>
+
+            <a href="#trending">Trending</a>
+
+            <a href="#toprated">Top Rated</a>
+
+            <a href="#nowplaying">Now Playing</a>
+
+            <a href="#indian">Indian Movies</a>
+
+        </div>
+
+        <div class="social-icons">
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+            <a href="#"><i class="fab fa-youtube"></i></a>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 MovieFlix. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+// Close mobile menu after clicking a link
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
+
+</script>
+<script>
+window.addEventListener("pageshow", () => {
+    const searchInput = document.querySelector('input[name="search"]');
+    if (searchInput) {
+        searchInput.value = "";
+    }
+});
+</script>
+
+</body>
+
+</html>

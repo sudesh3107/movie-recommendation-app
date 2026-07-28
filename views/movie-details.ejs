@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title><%= movie.title %> | MovieFlix</title>
+
+<link rel="stylesheet" href="/css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-film"></i>
+<h2>MovieFlix</h2>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="/">Home</a></li>
+
+<% if(user){ %>
+<li><a href="/watchlist">Watchlist</a></li>
+<li><a href="/profile">Profile</a></li>
+<li><a href="/api/auth/logout">Logout</a></li>
+<% }else{ %>
+<li><a href="/login">Login</a></li>
+<% } %>
+
+</ul>
+
+</nav>
+
+<div style="padding:120px 8% 70px;display:flex;gap:50px;flex-wrap:wrap;">
+
+<div>
+
+<img
+src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
+style="width:320px;border-radius:15px;box-shadow:0 0 25px rgba(0,0,0,.5);">
+
+</div>
+
+<div style="flex:1;min-width:320px;">
+
+<h1 style="font-size:48px;margin-bottom:20px;">
+<%= movie.title %>
+</h1>
+
+<p><strong>⭐ Rating:</strong> <%= movie.vote_average %> / 10</p>
+
+<p><strong>📅 Release Date:</strong> <%= movie.release_date %></p>
+
+<p>
+<strong>🎭 Genres:</strong>
+
+<% movie.genres.forEach(function(g,index){ %>
+
+<%= g.name %><%= index < movie.genres.length-1 ? "," : "" %>
+
+<% }) %>
+
+</p>
+
+<p><strong>⏱ Runtime:</strong> <%= movie.runtime %> Minutes</p>
+
+<p><strong>🌍 Language:</strong> <%= movie.original_language.toUpperCase() %></p>
+
+<br>
+
+<h2>Story</h2>
+
+<p style="line-height:1.8;">
+<%= movie.overview %>
+</p>
+
+<br>
+
+<% if(trailer){ %>
+
+<a
+href="<%= trailer %>"
+target="_blank"
+class="btn-primary">
+
+<i class="fa-solid fa-play"></i>
+
+Watch Trailer
+
+</a>
+
+<% } %>
+
+<br><br>
+
+<form action="/watchlist/add" method="POST">
+
+<input type="hidden" name="movie_id" value="<%= movie.id %>">
+
+<input type="hidden" name="movie_title" value="<%= movie.title %>">
+
+<input type="hidden" name="poster" value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
+
+<button class="watch-btn" type="submit">
+
+<i class="fa-solid fa-bookmark"></i>
+
+Add To Watchlist
+
+</button>
+
+</form>
+
+<br>
+
+<a href="/" class="details-btn">
+
+← Back To Home
+
+</a>
+
+</div>
+
+</div>
+
+<section style="padding:40px 70px;">
+
+<h2 class="section-title">
+
+🎬 Similar Movies
+
+</h2>
+
+<div class="movie-row">
+
+<% similarMovies.forEach(movie=>{ %>
+
+<div class="movie-card">
+
+<img
+src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
+
+<div class="movie-info">
+
+<h3><%= movie.title %></h3>
+
+<p>⭐ <%= movie.vote_average %></p>
+
+<a
+href="/movie/<%= movie.id %>"
+class="details-btn">
+
+View Details
+
+</a>
+
+</div>
+
+</div>
+
+<% }) %>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>MovieFlix</h2>
+
+<p>Powered by TMDb</p>
+
+<!-- ================= REVIEWS ================= -->
+
+<section style="padding:50px 70px;">
+
+<h2 class="section-title">
+⭐ Reviews
+</h2>
+
+<% if(user){ %>
+
+<form action="/reviews/add" method="POST" class="review-form">
+
+
+<input type="hidden" name="movie_id" value="<%= movie.id %>">
+
+<input type="hidden" name="movie_title" value="<%= movie.title %>">
+
+<label style="display:block;margin-bottom:15px;font-weight:600;">
+    Rating
+</label>
+
+<div class="star-rating">
+
+    <i class="fa-regular fa-star star" data-value="1"></i>
+    <i class="fa-regular fa-star star" data-value="2"></i>
+    <i class="fa-regular fa-star star" data-value="3"></i>
+    <i class="fa-regular fa-star star" data-value="4"></i>
+    <i class="fa-regular fa-star star" data-value="5"></i>
+
+</div>
+
+<input
+type="hidden"
+name="rating"
+id="rating"
+required>
+
+<br>
+
+<label>Your Review</label>
+
+<textarea
+name="review"
+rows="5"
+required
+style="width:100%;padding:15px;border-radius:8px;resize:none;"></textarea>
+
+<br><br>
+
+<button class="btn-primary" type="submit">
+    <i class="fa-solid fa-paper-plane"></i>
+    Submit Review
+</button>
+
+</form>
+
+<% } %>
+
+<% if(reviews.length > 0){ %>
+
+    <% reviews.forEach(review => { %>
+
+       <div class="review-card">
+
+    <div class="review-top">
+
+        <div class="review-user">
+
+            <i class="fa-solid fa-circle-user"></i>
+
+            <div>
+                <h4><%= review.fullname %></h4>
+
+                <span>
+                    <%= new Date(review.created_at).toLocaleDateString("en-IN",{
+                        day:"2-digit",
+                        month:"short",
+                        year:"numeric"
+                    }) %>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="review-stars">
+            <% for(let i=1;i<=5;i++){ %>
+
+                <% if(i<=review.rating){ %>
+                    <i class="fa-solid fa-star"></i>
+                <% }else{ %>
+                    <i class="fa-regular fa-star"></i>
+                <% } %>
+
+            <% } %>
+        </div>
+
+    </div>
+
+    <div class="review-content">
+        <%= review.review %>
+    </div>
+
+</div>
+    <% }) %>
+
+<% } else { %>
+
+    <p>No reviews yet.</p>
+
+<% } %>
+
+</section>
+
+</footer>
+
+<script>
+
+const stars = document.querySelectorAll(".star");
+const ratingInput = document.getElementById("rating");
+
+stars.forEach(star => {
+
+    star.addEventListener("click", () => {
+
+        const value = star.dataset.value;
+
+        ratingInput.value = value;
+
+        stars.forEach(s => {
+
+            if (Number(s.dataset.value) <= Number(value)) {
+
+                s.classList.remove("fa-regular");
+                s.classList.add("fa-solid");
+                s.classList.add("active");
+
+            } else {
+
+                s.classList.remove("fa-solid");
+                s.classList.add("fa-regular");
+                s.classList.remove("active");
+
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

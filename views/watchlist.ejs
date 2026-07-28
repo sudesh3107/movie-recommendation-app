@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Watchlist | MovieFlix</title>
+
+<link rel="stylesheet" href="/css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-film"></i>
+<h2>MovieFlix</h2>
+</div>
+
+<ul class="nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/watchlist">Watchlist</a></li>
+<li><a href="/profile">Profile</a></li>
+</ul>
+
+</nav>
+
+<div style="padding-top:120px;padding-bottom:60px;">
+
+<h1 style="text-align:center;font-size:45px;margin-bottom:10px;">
+❤️ My Watchlist
+</h1>
+
+<p style="text-align:center;color:#bbb;font-size:18px;margin-bottom:50px;">
+Total Movies : <strong><%= movies.length %></strong>
+</p>
+
+<% if(movies.length>0){ %>
+
+<div class="watchlist-container">
+
+<% movies.forEach(movie=>{ %>
+
+<div class="watch-card">
+
+<img class="watch-poster"
+src="<%= movie.poster %>"
+alt="<%= movie.movie_title %>">
+
+<div class="watch-info">
+<h2><%= movie.movie_title %></h2>
+
+<p>
+<i class="fa-solid fa-heart" style="color:#e50914;"></i>
+Saved in Watchlist
+</p>
+
+<div style="display:flex;gap:10px;margin-top:15px;">
+
+<a href="/movie/<%= movie.movie_id %>" class="details-btn" style="flex:1;text-align:center;">
+<i class="fa-solid fa-circle-info"></i>
+Details
+</a>
+
+<a href="/watchlist/remove/<%= movie.id %>"
+class="remove-btn">
+<i class="fa-solid fa-trash"></i>
+Remove
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<% }) %>
+
+</div>
+
+<% } else { %>
+
+<div style="text-align:center;padding:80px 20px;">
+
+<i class="fa-solid fa-heart-crack"
+style="font-size:90px;color:#e50914;"></i>
+
+<h2 style="margin-top:25px;font-size:35px;">
+Your Watchlist is Empty
+</h2>
+
+<p style="color:#bbb;margin-top:15px;">
+Start adding your favourite movies.
+</p>
+
+<br>
+
+<a href="/" class="btn-primary">
+
+<i class="fa-solid fa-film"></i>
+
+Explore Movies
+
+</a>
+
+</div>
+
+<% } %>
+
+</div>
+
+<footer>
+
+<h2>MovieFlix</h2>
+
+<p>Powered by TMDb</p>
+
+</footer>
+
+</body>
+
+</html>

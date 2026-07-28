@@ -1,0 +1,64 @@
+.search-box{
+    width:90%;
+    margin:30px auto;
+    text-align:center;
+}
+
+.search-box input{
+    width:60%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+}
+
+.movie-grid{
+    width:90%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+
+    padding-bottom:40px;
+}
+
+.movie-card{
+    background:#1d1d1d;
+    border-radius:10px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.movie-card:hover{
+    transform:translateY(-8px);
+}
+
+.movie-card img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+}
+
+.movie-info{
+    padding:15px;
+}
+
+.movie-info h3{
+    margin-bottom:8px;
+}
+
+.movie-info p{
+    color:#ccc;
+    margin-bottom:8px;
+}
+
+.movie-info button{
+    width:100%;
+    padding:10px;
+    background:#e50914;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}

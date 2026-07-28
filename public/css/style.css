@@ -1,0 +1,816 @@
+/* ==========================================
+   MOVIEFLIX V2 CSS
+   PART 1
+   ========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b0b0b;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+button{
+    cursor:pointer;
+    font-family:inherit;
+}
+
+section{
+    padding:60px 6%;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:75px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 6%;
+
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(12px);
+
+    z-index:999;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo i{
+    color:#e50914;
+    font-size:32px;
+}
+
+.logo h2 {
+    color: #e50914;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.nav-links{
+    display:flex;
+    gap:28px;
+    list-style:none;
+}
+
+.nav-links li a{
+    font-size: 17px;
+    transition:.3s;
+    font-weight:500;
+}
+
+.nav-links li a:hover{
+    color:#e50914;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    color:white;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    margin-top:75px;
+
+    height:100vh;
+
+    background:url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=2000&q=80");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+}
+
+.hero-overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.95)
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    animation:fadeUp 1s ease;
+}
+
+.tagline{
+    display: inline-block;
+    background: #e50914;
+    color: #fff;
+    padding: 14px 34px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+    box-shadow: 0 6px 20px rgba(229, 9, 20, 0.35);
+}
+
+.hero-content h1{
+    font-size:76px;
+    font-weight:800;
+    line-height:84px;
+    margin-bottom:25px;
+}
+
+.hero-content p{
+    font-size:24px;
+    line-height:38px;
+    color:#ddd;
+    max-width:800px;
+    margin:0 auto 40px;
+}
+
+/* ================= SEARCH ================= */
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:35px;
+}
+
+.search-box input{
+    width:500px;
+    max-width:100%;
+    padding:18px 25px;
+    border:none;
+    border-radius:50px;
+    font-size:18px;
+}
+
+.search-box button{
+    background:#e50914;
+    color:#fff;
+    border:none;
+    padding:18px 35px;
+    border-radius:50px;
+    font-size:17px;
+    font-weight:600;
+}
+
+.search-box button:hover{
+
+    background:#ff2936;
+
+    transform:translateY(-2px);
+
+}
+
+/* ================= HERO BUTTONS ================= */
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-primary{
+    font-size: 18px;
+    font-weight: 600;
+    background:#e50914;
+
+    padding:18px 45px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#ff2936;
+
+}
+
+.btn-secondary{
+    font-size: 18px;
+    font-weight: 600;
+    border:2px solid white;
+
+    padding:18px 45px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+    background:white;
+
+    color:black;
+
+}
+
+/* ================= TITLES ================= */
+
+.section-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ==========================================
+   MOVIEFLIX V2 CSS
+   PART 2
+   ========================================== */
+
+/* ================= MOVIE ROW ================= */
+
+.movie-row{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    padding-bottom:15px;
+}
+
+.movie-row::-webkit-scrollbar{
+    height:8px;
+}
+
+.movie-row::-webkit-scrollbar-thumb{
+    background:#e50914;
+    border-radius:20px;
+}
+
+.movie-row::-webkit-scrollbar-track{
+    background:#111;
+}
+
+.movie-card{
+
+    min-width:250px;
+
+    background:#171717;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    transition:.35s;
+
+    flex-shrink:0;
+
+}
+
+.movie-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(229,9,20,.35);
+
+}
+
+.movie-card img{
+
+    width:100%;
+
+    height:360px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.movie-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.movie-info{
+
+    padding:20px;
+
+}
+
+.movie-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.movie-info p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.details-btn{
+
+    display:block;
+
+    text-align:center;
+
+    background:#e50914;
+
+    padding:12px;
+
+    border-radius:8px;
+    font-size: 16px;
+    font-weight:600;
+
+}
+
+.watch-btn{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    background:#333;
+
+    color:white;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.watch-btn:hover{
+
+    background:#e50914;
+
+}
+
+/* ================= SEARCH GRID ================= */
+
+.movie-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.no-result{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:#ccc;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    margin-top:60px;
+
+    background:#000;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+    border-top:1px solid #222;
+
+}
+
+footer h2{
+
+    color:#e50914;
+    font-size: 30px;
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    color:#aaa;
+    font-size: 16px;
+    margin-top:8px;
+
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:992px){
+
+    .hero-content h1{
+
+        font-size:52px;
+
+        line-height:65px;
+
+    }
+
+    .hero-content p{
+
+        font-size:17px;
+
+    }
+
+    .search-box input{
+
+        width:100%;
+
+        max-width:500px;
+
+    }
+
+    .movie-card{
+
+        min-width:200px;
+
+    }
+
+    .movie-card img{
+
+        height:300px;
+
+    }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    /* Navbar */
+    .navbar{
+        padding:0 20px;
+        height:70px;
+    }
+
+    .logo h2{
+        font-size:28px;
+    }
+
+    .logo i{
+        font-size:26px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#111;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+        padding:25px 0;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li a{
+        font-size:17px;
+    }
+
+    /* Hero */
+    .hero{
+        min-height:100vh;
+        height:auto;
+    }
+
+    .hero-overlay{
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        padding:25px;
+    }
+
+    .hero-content{
+        width:100%;
+        max-width:100%;
+    }
+
+    .tagline{
+    font-size: 15px;
+    padding: 10px 22px;
+    margin-bottom: 25px;
+}
+    .hero-content h1{
+        font-size:42px;
+        line-height:52px;
+        margin-bottom:20px;
+    }
+
+    .hero-content p{
+        font-size:17px;
+        line-height:28px;
+        margin-bottom:30px;
+    }
+
+    /* Search */
+    .search-box{
+        flex-direction:column;
+        gap:15px;
+        margin-bottom:30px;
+    }
+
+    .search-box input{
+        width:100%;
+        font-size:16px;
+    }
+
+    .search-box button{
+        width:100%;
+        font-size:16px;
+    }
+
+    /* Hero Buttons */
+    .hero-buttons{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        text-align:center;
+        font-size:16px;
+        padding:16px;
+    }
+
+    /* Sections */
+    section{
+        padding:50px 20px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+    /* Movie Cards */
+    .movie-row{
+        gap:15px;
+    }
+
+    .movie-card{
+        min-width:170px;
+    }
+
+    .movie-card img{
+        height:240px;
+    }
+
+    .movie-info h3{
+        font-size:18px;
+    }
+
+    .movie-info p{
+        font-size:14px;
+    }
+
+    .details-btn,
+    .watch-btn{
+        font-size:14px;
+    }
+
+    .movie-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    /* Footer */
+    footer h2{
+        font-size:26px;
+    }
+
+    footer p{
+        font-size:14px;
+    }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media(max-width:480px){
+
+    .hero-content h1{
+
+        font-size:30px;
+
+        line-height:40px;
+
+    }
+
+    .hero-content p{
+
+        font-size:14px;
+
+    }
+
+    .movie-card{
+
+        min-width:145px;
+
+    }
+
+    .movie-card img{
+
+        height:210px;
+
+    }
+
+    .movie-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+/* ==========================
+   Star Rating
+========================== */
+
+.star-rating{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin:20px 0 30px;
+}
+
+.star{
+    font-size:42px;
+    color:#555;
+    cursor:pointer;
+    transition:all .3s ease;
+}
+
+.star:hover{
+    color:#FFD700;
+    transform:scale(1.25);
+}
+
+.star.active{
+    color:#FFD700;
+}
+.review-form{
+
+    background:#171717;
+    padding:35px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.08);
+
+}
+/* ===========================
+   Review Card
+=========================== */
+.review-card{
+    background:#171717;
+    border-radius:18px;
+    padding:25px 30px;
+    margin-bottom:25px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s ease;
+}
+
+.review-card:hover{
+    transform:translateY(-5px);
+    border-color:#e50914;
+    box-shadow:0 10px 30px rgba(229,9,20,.25);
+}
+
+.review-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:18px;
+}
+
+.review-user{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.review-user i{
+    font-size:42px;
+    color:#e50914;
+}
+
+.review-user h4{
+    margin:0;
+    color:#fff;
+    font-size:18px;
+}
+
+.review-user span{
+    display:block;
+    margin-top:4px;
+    color:#999;
+    font-size:13px;
+}
+
+.review-stars{
+    display:flex;
+    gap:4px;
+    color:#FFD700;
+    font-size:20px;
+}
+
+.review-content{
+    margin-left:57px;
+    color:#ddd;
+    font-size:16px;
+    line-height:1.8;
+}

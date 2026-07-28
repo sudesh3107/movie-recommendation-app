@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.card{
+    width:500px;
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 10px 35px rgba(0,0,0,.45);
+}
+
+.card h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#e50914;
+}
+
+.input-box{
+    margin-bottom:20px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+.input-box input{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:8px;
+    background:#2b2b2b;
+    color:white;
+    font-size:15px;
+}
+
+.password-box{
+    position:relative;
+}
+
+.password-box i{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+}
+
+.save-btn{
+    flex:1;
+    padding:14px;
+    background:#e50914;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.save-btn:hover{
+    background:#c40812;
+}
+
+.cancel-btn{
+    flex:1;
+    text-align:center;
+    padding:14px;
+    text-decoration:none;
+    background:#444;
+    color:white;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.cancel-btn:hover{
+    background:#666;
+}
