@@ -15,7 +15,7 @@ html{
 }
 
 body{
-    background:#0b0b0b;
+    background:#0b1120;
     color:#fff;
     overflow-x:hidden;
 }
@@ -67,12 +67,12 @@ section{
 }
 
 .logo i{
-    color:#e50914;
+    color:#f5c518;
     font-size:32px;
 }
 
 .logo h2 {
-    color: #e50914;
+    color: #f5c518;
     font-size: 36px;
     font-weight: 700;
 }
@@ -90,7 +90,7 @@ section{
 }
 
 .nav-links li a:hover{
-    color:#e50914;
+    color:#f5c518;
 }
 
 .menu-toggle{
@@ -143,7 +143,7 @@ section{
 
 .tagline{
     display: inline-block;
-    background: #e50914;
+    background: #f5c518;
     color: #fff;
     padding: 14px 34px;
     border-radius: 50px;
@@ -151,7 +151,7 @@ section{
     font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 35px;
-    box-shadow: 0 6px 20px rgba(229, 9, 20, 0.35);
+    box-shadow: 0 6px 20px rgba(245, 197, 24, 0.35);
 }
 
 .hero-content h1{
@@ -190,7 +190,7 @@ section{
 }
 
 .search-box button{
-    background:#e50914;
+    background:#f5c518;
     color:#fff;
     border:none;
     padding:18px 35px;
@@ -201,7 +201,7 @@ section{
 
 .search-box button:hover{
 
-    background:#ff2936;
+    background:#ffcf33;
 
     transform:translateY(-2px);
 
@@ -220,7 +220,7 @@ section{
 .btn-primary{
     font-size: 18px;
     font-weight: 600;
-    background:#e50914;
+    background:#f5c518;
 
     padding:18px 45px;
 
@@ -232,7 +232,7 @@ section{
 
 .btn-primary:hover{
 
-    background:#ff2936;
+    background:#ffcf33;
 
 }
 
@@ -306,19 +306,19 @@ section{
 }
 
 .movie-row::-webkit-scrollbar-thumb{
-    background:#e50914;
+    background:#f5c518;
     border-radius:20px;
 }
 
 .movie-row::-webkit-scrollbar-track{
-    background:#111;
+    background:#131c30;
 }
 
 .movie-card{
 
     min-width:250px;
 
-    background:#171717;
+    background:#16213e;
 
     border-radius:15px;
 
@@ -336,7 +336,7 @@ section{
 
     transform:translateY(-10px);
 
-    box-shadow:0 15px 35px rgba(229,9,20,.35);
+    box-shadow:0 15px 35px rgba(245,197,24,.35);
 
 }
 
@@ -391,7 +391,7 @@ section{
 
     text-align:center;
 
-    background:#e50914;
+    background:#f5c518;
 
     padding:12px;
 
@@ -409,7 +409,7 @@ section{
 
     border:none;
 
-    background:#333;
+    background:#3a4a6b;
 
     color:white;
 
@@ -423,7 +423,7 @@ section{
 
 .watch-btn:hover{
 
-    background:#e50914;
+    background:#f5c518;
 
 }
 
@@ -467,7 +467,7 @@ footer{
 
 footer h2{
 
-    color:#e50914;
+    color:#f5c518;
     font-size: 30px;
     margin-bottom:15px;
 
@@ -549,7 +549,7 @@ footer p{
         top:70px;
         left:0;
         width:100%;
-        background:#111;
+        background:#131c30;
         flex-direction:column;
         align-items:center;
         gap:20px;
@@ -746,7 +746,7 @@ footer p{
 }
 .review-form{
 
-    background:#171717;
+    background:#16213e;
     padding:35px;
     border-radius:18px;
     border:1px solid rgba(255,255,255,.08);
@@ -756,7 +756,7 @@ footer p{
    Review Card
 =========================== */
 .review-card{
-    background:#171717;
+    background:#16213e;
     border-radius:18px;
     padding:25px 30px;
     margin-bottom:25px;
@@ -766,8 +766,8 @@ footer p{
 
 .review-card:hover{
     transform:translateY(-5px);
-    border-color:#e50914;
-    box-shadow:0 10px 30px rgba(229,9,20,.25);
+    border-color:#f5c518;
+    box-shadow:0 10px 30px rgba(245,197,24,.25);
 }
 
 .review-top{
@@ -785,7 +785,7 @@ footer p{
 
 .review-user i{
     font-size:42px;
-    color:#e50914;
+    color:#f5c518;
 }
 
 .review-user h4{

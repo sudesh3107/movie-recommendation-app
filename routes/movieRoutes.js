@@ -9,4 +9,7 @@ router.get("/", movieController.searchMovies);
 // Movie Details Page
 router.get("/movie/:id", movieController.getMovieDetails);
 
+// Watch Movie Page
+router.get("/movie/:id/watch", movieController.getMovieWatch);
+
 module.exports = router;

@@ -1,0 +1,455 @@
+/* ==========================================================
+   MOVIEFLIX — SOLARIS MATTE THEME
+   Warm solar amber on deep matte charcoal · flat, no gloss
+   Loaded AFTER page CSS so it overrides cleanly.
+   ========================================================== */
+
+:root {
+    --mf-sun: #ff9d2e;        /* solar amber */
+    --mf-sun-hi: #ffb45c;     /* brighter amber */
+    --mf-sun-deep: #e06a00;   /* burnt orange */
+    --mf-bg: #120f0a;         /* matte warm black */
+    --mf-panel: #1d1812;      /* matte charcoal */
+    --mf-panel-2: #262017;    /* raised panel */
+    --mf-line: rgba(255, 157, 46, .28);
+    --mf-text: #f3ede2;       /* warm off-white */
+    --mf-muted: #b5a68f;      /* warm grey */
+}
+
+body {
+    background: var(--mf-bg);
+    color: var(--mf-text);
+}
+
+/* ---------- NAVBAR (matte) ---------- */
+.navbar {
+    background: rgba(18, 15, 10, .6);
+    border-bottom: 1px solid var(--mf-line);
+}
+
+.navbar.scrolled {
+    background: rgba(18, 15, 10, .94);
+    border-bottom: 1px solid var(--mf-line);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .5);
+}
+
+/* ---------- BUTTONS (flat matte amber) ---------- */
+.btn-primary,
+.search-box button,
+.watch-btn,
+.btn-gold {
+    background: var(--mf-sun) !important;
+    color: #201503 !important;
+    border: none;
+    box-shadow: none;
+}
+
+.btn-primary:hover,
+.search-box button:hover,
+.watch-btn:hover {
+    background: var(--mf-sun-hi) !important;
+    transform: translateY(-2px);
+    box-shadow: none;
+}
+
+.btn-secondary {
+    border: 2px solid var(--mf-sun) !important;
+    color: var(--mf-sun) !important;
+    background: transparent !important;
+}
+
+.btn-secondary:hover {
+    background: var(--mf-sun) !important;
+    color: #201503 !important;
+}
+
+/* ---------- TAGLINE (flat) ---------- */
+.tagline {
+    background: var(--mf-sun) !important;
+    color: #201503 !important;
+    font-weight: 800 !important;
+    box-shadow: none !important;
+    letter-spacing: 2px !important;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+    background: var(--mf-bg);
+}
+
+.hero-content h1 {
+    background: linear-gradient(180deg, #fff7e6 0%, #ffd9a0 55%, var(--mf-sun) 130%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    color: var(--mf-muted) !important;
+}
+
+.hero-dot.active {
+    background: var(--mf-sun);
+    box-shadow: none;
+}
+
+/* ---------- COMPACT BUTTONS ---------- */
+.btn-primary,
+.btn-secondary,
+.search-box button,
+.watch-btn,
+.details-btn,
+.remove-btn,
+.browse-btn,
+.home-btn {
+    padding: 10px 22px !important;
+    font-size: 14px !important;
+    border-radius: 30px;
+    white-space: nowrap;
+    width: fit-content !important;
+}
+
+.buttons {
+    align-items: flex-start;
+}
+
+.hero-buttons a {
+    width: auto;
+}
+
+/* ---------- FOOTER (compact) ---------- */
+footer {
+    margin-top: 40px;
+    padding: 22px 20px !important;
+}
+
+footer h2 {
+    font-size: 22px !important;
+    margin-bottom: 6px !important;
+}
+
+footer p {
+    font-size: 13px !important;
+    margin-top: 4px !important;
+}
+
+footer .footer-links {
+    margin: 10px 0;
+}
+
+footer .social-icons {
+    margin: 8px 0;
+}
+
+footer .copyright {
+    margin-top: 10px !important;
+    font-size: 12px !important;
+}
+
+/* ---------- REVIEWS SECTION (compact + matte) ---------- */
+.reviews-section {
+    padding-top: 10px !important;
+}
+
+.reviews-section .review-form {
+    background: var(--mf-panel) !important;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    border: 1px solid var(--mf-line);
+    box-shadow: none;
+    border-radius: 14px;
+    padding: 16px 20px !important;
+    animation: none !important;
+}
+
+.reviews-section .review-form label {
+    font-size: 13px !important;
+    margin-bottom: 6px !important;
+}
+
+.reviews-section .star-rating i {
+    font-size: 15px !important;
+}
+
+.reviews-section textarea[name="review"] {
+    width: 100% !important;
+    padding: 10px 12px !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    background: var(--mf-panel-2);
+    color: var(--mf-text);
+    border: 1px solid var(--mf-line);
+}
+
+.reviews-section .review-card {
+    background: var(--mf-panel) !important;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    border: 1px solid var(--mf-line);
+    box-shadow: none;
+    border-radius: 12px;
+    padding: 12px 16px !important;
+    margin-bottom: 10px !important;
+    animation: none !important;
+}
+
+.reviews-section .review-top {
+    margin-bottom: 6px !important;
+}
+
+.reviews-section .review-card h4 {
+    font-size: 13px !important;
+    margin: 0 !important;
+}
+
+.reviews-section .review-user span {
+    font-size: 11px !important;
+}
+
+.reviews-section .review-stars i {
+    font-size: 12px !important;
+}
+
+.reviews-section .review-content {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.reviews-section .review-form .btn-primary {
+    padding: 8px 18px !important;
+    font-size: 13px !important;
+}
+
+/* ---------- SECTION TITLES ---------- */
+.section-title {
+    color: #fff !important;
+}
+
+.section-title::after {
+    background: linear-gradient(90deg, var(--mf-sun), transparent);
+}
+
+/* ---------- CARDS (matte) ---------- */
+.movie-card {
+    background: var(--mf-panel) !important;
+    cursor: pointer;
+    border: 1px solid rgba(255, 157, 46, .08);
+    transition: transform .35s ease, border-color .35s ease, background .35s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--mf-line);
+    background: var(--mf-panel-2) !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .45) !important;
+}
+
+.card-rating {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 2;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: rgba(18, 15, 10, .85);
+    color: var(--mf-sun);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .5px;
+    border: 1px solid var(--mf-line);
+}
+
+/* ---------- ROW ARROWS (flat) ---------- */
+.row-wrapper {
+    position: relative;
+    padding: 0 0 15px;
+}
+
+.row-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--mf-line);
+    background: var(--mf-panel-2);
+    color: var(--mf-sun);
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .3s ease, background .3s ease, color .3s ease;
+}
+
+.row-wrapper:hover .row-arrow {
+    opacity: 1;
+}
+
+.row-arrow:hover {
+    background: var(--mf-sun);
+    border-color: var(--mf-sun);
+    color: #201503;
+}
+
+.row-arrow.left  { left: -6px; }
+.row-arrow.right { right: -6px; }
+
+/* ---------- SCROLLBAR ---------- */
+.movie-row::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background: var(--mf-sun-deep);
+    border-radius: 20px;
+}
+
+/* ---------- SCROLL REVEAL ---------- */
+.reveal {
+    opacity: 0;
+    transform: translateY(34px);
+    transition: opacity .7s ease, transform .7s ease;
+    will-change: opacity, transform;
+}
+
+.reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------- EMPTY STATE ---------- */
+.empty-note {
+    color: var(--mf-muted);
+    font-size: 18px;
+    padding: 30px 10px;
+}
+
+/* ==========================================================
+   WATCH PAGE (matte)
+   ========================================================== */
+
+.watch-body {
+    background: var(--mf-bg);
+}
+
+.watch-wrap {
+    max-width: 1100px;
+    margin: 40px auto 60px;
+    padding: 0 24px;
+}
+
+.watch-head {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.watch-poster {
+    width: 190px;
+    border-radius: 16px;
+    border: 1px solid var(--mf-line);
+    box-shadow: none;
+    flex-shrink: 0;
+}
+
+.watch-meta {
+    flex: 1;
+    min-width: 260px;
+}
+
+.watch-meta h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    margin: 8px 0 6px;
+}
+
+.watch-year {
+    color: var(--mf-sun);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.watch-badge {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    background: var(--mf-sun);
+    color: #201503;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.watch-note {
+    color: var(--mf-muted);
+    font-size: 15px;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.watch-actions {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inline-form {
+    display: inline;
+    margin: 0;
+}
+
+.inline-form .btn-primary {
+    padding: 14px 30px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.player-frame {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid var(--mf-line);
+    background: #000;
+}
+
+.demo-player {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    background: #000;
+}
+
+.player-caption {
+    position: absolute;
+    left: 16px;
+    bottom: 14px;
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: rgba(18, 15, 10, .85);
+    color: var(--mf-text);
+    font-size: 13px;
+    border: 1px solid var(--mf-line);
+    pointer-events: none;
+}
+
+.player-caption strong {
+    color: var(--mf-sun);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .hero-overlay { padding: 100px 6%; min-height: 84vh; }
+    .row-arrow { display: none; }
+    .watch-head { flex-direction: column; }
+    .watch-poster { width: 140px; }
+}

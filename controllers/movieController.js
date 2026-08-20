@@ -1,6 +1,7 @@
 const movieService = require("../services/omdbService");
 const Review = require("../models/reviewModel");
 const History = require("../models/historyModel");
+const { getDemoStream } = require("../config/demoStreams");
 
 // ==============================
 // Home Page
@@ -105,15 +106,9 @@ const getMovieDetails = async (req, res) => {
 
         }
 
-        // Trailer + Similar Movies
+        // Similar Movies
 
-        const [trailer, similarMovies] = await Promise.all([
-
-            movieService.getMovieTrailer(req.params.id),
-
-            movieService.getSimilarMovies(req.params.id)
-
-        ]);
+        const similarMovies = await movieService.getSimilarMovies(req.params.id);
 
         // Reviews
 
@@ -149,8 +144,6 @@ const getMovieDetails = async (req, res) => {
 
                     movie,
 
-                    trailer,
-
                     similarMovies,
 
                     reviews,
@@ -184,6 +177,54 @@ const getMovieDetails = async (req, res) => {
 };
 
 // ==============================
+// Watch Movie
+// ==============================
+
+const getMovieWatch = async (req, res) => {
+
+    try {
+
+        const movie = await movieService.getMovieDetails(req.params.id);
+
+        if (!movie) {
+
+            return res.render("error", {
+
+                message: "Movie not found.",
+
+                user: res.locals.user || null
+
+            });
+
+        }
+
+        res.render("watch", {
+
+            movie,
+
+            user: res.locals.user || null,
+
+            demoSrc: getDemoStream(req.params.id)
+
+        });
+
+    } catch (error) {
+
+        console.log(error);
+
+        res.render("error", {
+
+            message: "Something went wrong while loading the player.",
+
+            user: res.locals.user || null
+
+        });
+
+    }
+
+};
+
+// ==============================
 // Export
 // ==============================
 
@@ -191,6 +232,8 @@ module.exports = {
 
     searchMovies,
 
-    getMovieDetails
+    getMovieDetails,
+
+    getMovieWatch
 
 };

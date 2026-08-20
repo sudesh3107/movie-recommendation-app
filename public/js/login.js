@@ -24,8 +24,6 @@ form.addEventListener("submit", async (e) => {
 
     if (data.success) {
 
-        localStorage.setItem("token", data.token);
-
         message.style.color = "#00ff66";
         message.innerHTML = "Login Successful";
 

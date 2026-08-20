@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title><%= movie.title %> | MovieFlix</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/redesign.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body class="watch-body">
+
+<nav class="navbar" id="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-film"></i>
+        <h2>MovieFlix</h2>
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="/">Home</a></li>
+        <li><a href="/movie/<%= movie.id %>">Details</a></li>
+        <li><a href="/watchlist">Watchlist</a></li>
+
+        <% if(user){ %>
+            <li><a href="/api/auth/logout">Logout</a></li>
+        <% } else { %>
+            <li><a href="/login">Login</a></li>
+        <% } %>
+
+    </ul>
+
+</nav>
+
+<section class="watch-wrap reveal in-view">
+
+    <div class="watch-head">
+
+        <img
+            src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
+            alt="<%= movie.title %>"
+            class="watch-poster">
+
+        <div class="watch-meta">
+
+            <span class="watch-badge">DEMO STREAM</span>
+
+            <h1><%= movie.title %></h1>
+
+            <p class="watch-year">
+                <%= movie.release_date ? movie.release_date.slice(0,4) : 'N/A' %> ·
+                <%= movie.vote_average ? '★ ' + movie.vote_average.toFixed(1) : '' %>
+            </p>
+
+            <p class="watch-note">
+                <i class="fa-solid fa-circle-info"></i>
+                Playing a free, open-license sample film to demonstrate the player.
+            </p>
+
+            <div class="watch-actions">
+
+                <a href="/movie/<%= movie.id %>" class="btn-secondary">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to Details
+                </a>
+
+                <form action="/watchlist/add" method="POST" class="inline-form">
+
+                    <input type="hidden" name="movie_id" value="<%= movie.id %>">
+
+                    <input type="hidden" name="movie_title" value="<%= movie.title %>">
+
+                    <input type="hidden"
+                           name="poster"
+                           value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
+
+                    <button class="btn-primary" type="submit">
+                        <i class="fa-solid fa-bookmark"></i>
+                        Watchlist
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="player-frame">
+
+        <video id="demoPlayer" class="demo-player" controls autoplay playsinline poster="https://image.tmdb.org/t/p/w780<%= movie.backdrop_path || movie.poster_path %>">
+            <source src="<%= demoSrc.url %>" type="application/x-mpegURL">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <p class="player-caption">
+            <i class="fa-solid fa-play"></i>
+            Now playing: <strong><%= demoSrc.title %></strong> (free open-license sample)
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>🎬 MovieFlix</h2>
+
+        <p>Your Ultimate Movie Recommendation Platform</p>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 MovieFlix. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- HLS player (for .m3u8 streams) -->
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js"></script>
+<script>
+(function () {
+    var video = document.getElementById("demoPlayer");
+    if (!video) return;
+
+    var source = video.querySelector("source");
+    if (!source) return;
+
+    var src = source.getAttribute("src");
+
+    var isDirectFile = /\.(mp4|webm|ogg|ogv)(\?|#|$)/i.test(src);
+
+    if (isDirectFile) return;
+
+    if (video.canPlayType("application/vnd.apple.mpegurl")) {
+        video.src = src;
+        return;
+    }
+
+    if (window.Hls && Hls.isSupported()) {
+        var hls = new Hls();
+        hls.loadSource(src);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, function () {
+            video.play();
+        });
+    } else {
+        video.innerHTML = "HLS playback is not supported in this browser.";
+    }
+})();
+</script>
+
+</body>
+
+</html>

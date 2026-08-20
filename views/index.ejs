@@ -9,20 +9,21 @@
     <title>MovieFlix</title>
 
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/redesign.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-<link rel="stylesheet" href="/css/effects.css">
+    <link rel="stylesheet" href="/css/effects.css">
 </head>
 
 <body>
 
 <!-- ================= NAVBAR ================= -->
 
-<nav class="navbar">
+<nav class="navbar" id="navbar">
 
     <div class="logo">
         <i class="fa-solid fa-film"></i>
@@ -60,7 +61,25 @@
 
 <!-- ================= HERO ================= -->
 
-<section class="hero">
+<section class="hero" id="hero">
+
+    <!-- Dynamic backdrop slides from real trending movies -->
+    <div class="hero-slides">
+
+        <% if(trending.length){ %>
+
+            <% trending.slice(0,5).forEach((movie, i) => { %>
+
+                <div class="hero-slide <%= i === 0 ? 'active' : '' %>"
+                     style="background-image:url('https://image.tmdb.org/t/p/original<%= movie.backdrop_path %>')">
+                    <div class="hero-slide-shade"></div>
+                </div>
+
+            <% }) %>
+
+        <% } %>
+
+    </div>
 
     <div class="hero-overlay">
 
@@ -124,24 +143,29 @@
 
     </div>
 
+    <% if(trending.length){ %><div class="hero-dots" id="heroDots"></div><% } %>
+
 </section>
+
 <!-- ================= SEARCH RESULTS ================= -->
 
 <% if(search){ %>
 
-<section id="movies">
+<section id="movies" class="reveal">
 
     <h2 class="section-title">
         🔍 Search Results
     </h2>
 
-    <div class="movie-grid">
+    <div class="movie-row">
 
         <% if(movies.length > 0){ %>
 
             <% movies.forEach(movie => { %>
 
-            <div class="movie-card">
+            <div class="movie-card" data-href="/movie/<%= movie.id %>">
+
+                <span class="card-rating">★ <%= movie.vote_average ? movie.vote_average.toFixed(1) : 'N/A' %></span>
 
                 <img
                     src="<%= movie.poster_path ? 'https://image.tmdb.org/t/p/w500' + movie.poster_path : '/images/no-poster.png' %>"
@@ -151,15 +175,13 @@
 
                     <h3><%= movie.title %></h3>
 
-                    <p>⭐ <%= movie.vote_average.toFixed(1) %></p>
-
                     <p>📅 <%= movie.release_date || 'N/A' %></p>
 
                     <div class="buttons">
 
-                        <a href="/movie/<%= movie.id %>" class="details-btn">
-                            <i class="fa-solid fa-circle-info"></i>
-                            View Details
+                        <a href="https://www.youtube.com/results?search_query=<%= encodeURIComponent(movie.title + ' official trailer') %>" target="_blank" class="details-btn">
+                            <i class="fa-solid fa-play"></i>
+                            Watch Trailer
                         </a>
 
                         <form action="/watchlist/add" method="POST">
@@ -189,9 +211,7 @@
 
         <% } else { %>
 
-            <h2 class="no-result">
-                No Movies Found
-            </h2>
+            <p class="empty-note">No movies found. Try another search.</p>
 
         <% } %>
 
@@ -201,134 +221,137 @@
 
 <% } %>
 
-<!-- ================= TRENDING MOVIES ================= -->
+<!-- ================= TRENDING ================= -->
 
-<section id="trending">
+<section id="trending" class="reveal">
 
     <h2 class="section-title">
         🔥 Trending Movies
     </h2>
 
-    <div class="movie-row">
-        <% trending.forEach(movie => { %>
+    <div class="row-wrapper">
 
-<div class="movie-card">
+        <button class="row-arrow left" aria-label="Scroll left"><i class="fa-solid fa-chevron-left"></i></button>
 
-    <img
-        src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
-        alt="<%= movie.title %>">
+        <div class="movie-row">
 
-    <div class="movie-info">
+            <% trending.forEach(movie => { %>
 
-        <h3><%= movie.title %></h3>
+            <div class="movie-card" data-href="/movie/<%= movie.id %>">
 
-        <p>⭐ <%= movie.vote_average.toFixed(1) %></p>
+                <span class="card-rating">★ <%= movie.vote_average.toFixed(1) %></span>
 
-        <div class="buttons">
+                <img
+                    src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
+                    alt="<%= movie.title %>">
 
-            <a href="/movie/<%= movie.id %>" class="details-btn">
-                <i class="fa-solid fa-circle-info"></i>
-                View Details
-            </a>
+                <div class="movie-info">
 
-            <form action="/watchlist/add" method="POST">
+                    <h3><%= movie.title %></h3>
 
-                <input
-                    type="hidden"
-                    name="movie_id"
-                    value="<%= movie.id %>">
+                    <div class="buttons">
 
-                <input
-                    type="hidden"
-                    name="movie_title"
-                    value="<%= movie.title %>">
+                        <a href="https://www.youtube.com/results?search_query=<%= encodeURIComponent(movie.title + ' official trailer') %>" target="_blank" class="details-btn">
+                            <i class="fa-solid fa-play"></i>
+                            Watch Trailer
+                        </a>
 
-                <input
-                    type="hidden"
-                    name="poster"
-                    value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
+                        <form action="/watchlist/add" method="POST">
 
-                <button class="watch-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                    Watchlist
-                </button>
+                            <input type="hidden" name="movie_id" value="<%= movie.id %>">
 
-            </form>
+                            <input type="hidden" name="movie_title" value="<%= movie.title %>">
 
-        </div>
+                            <input type="hidden"
+                                   name="poster"
+                                   value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
 
-    </div>
+                            <button class="watch-btn">
+                                <i class="fa-solid fa-bookmark"></i>
+                                Watchlist
+                            </button>
 
-</div>
+                        </form>
 
-<% }) %>
-
-</div>
-
-</section>
-
-<!-- ================= TOP RATED ================= -->
-
-<section id="toprated">
-
-    <h2 class="section-title">
-        ⭐ Top Rated Movies
-    </h2>
-
-    <div class="movie-row">
-
-        <% topRated.forEach(movie => { %>
-
-        <div class="movie-card">
-
-            <img
-                src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
-                alt="<%= movie.title %>">
-
-            <div class="movie-info">
-
-                <h3><%= movie.title %></h3>
-
-                <p>⭐ <%= movie.vote_average.toFixed(1) %></p>
-
-                <div class="buttons">
-
-                    <a href="/movie/<%= movie.id %>" class="details-btn">
-                        <i class="fa-solid fa-circle-info"></i>
-                        View Details
-                    </a>
-
-                    <form action="/watchlist/add" method="POST">
-
-                        <input
-                            type="hidden"
-                            name="movie_id"
-                            value="<%= movie.id %>">
-
-                        <input
-                            type="hidden"
-                            name="movie_title"
-                            value="<%= movie.title %>">
-
-                        <input
-                            type="hidden"
-                            name="poster"
-                            value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
-
-                        <button class="watch-btn">
-                            <i class="fa-solid fa-bookmark"></i>
-                            Watchlist
-                        </button>
-
-                    </form>
+                    </div>
 
                 </div>
 
             </div>
 
+            <% }) %>
+
         </div>
 
-        <% }) %>
+        <button class="row-arrow right" aria-label="Scroll right"><i class="fa-solid fa-chevron-right"></i></button>
+
+    </div>
+
+</section>
+
+<!-- ================= TOP RATED ================= -->
+
+<section id="toprated" class="reveal">
+
+    <h2 class="section-title">
+        ⭐ Top Rated Movies
+    </h2>
+
+    <div class="row-wrapper">
+
+        <button class="row-arrow left" aria-label="Scroll left"><i class="fa-solid fa-chevron-left"></i></button>
+
+        <div class="movie-row">
+
+            <% topRated.forEach(movie => { %>
+
+            <div class="movie-card" data-href="/movie/<%= movie.id %>">
+
+                <span class="card-rating">★ <%= movie.vote_average.toFixed(1) %></span>
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
+                    alt="<%= movie.title %>">
+
+                <div class="movie-info">
+
+                    <h3><%= movie.title %></h3>
+
+                    <div class="buttons">
+
+                        <a href="https://www.youtube.com/results?search_query=<%= encodeURIComponent(movie.title + ' official trailer') %>" target="_blank" class="details-btn">
+                            <i class="fa-solid fa-play"></i>
+                            Watch Trailer
+                        </a>
+
+                        <form action="/watchlist/add" method="POST">
+
+                            <input type="hidden" name="movie_id" value="<%= movie.id %>">
+
+                            <input type="hidden" name="movie_title" value="<%= movie.title %>">
+
+                            <input type="hidden"
+                                   name="poster"
+                                   value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
+
+                            <button class="watch-btn">
+                                <i class="fa-solid fa-bookmark"></i>
+                                Watchlist
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <% }) %>
+
+        </div>
+
+        <button class="row-arrow right" aria-label="Scroll right"><i class="fa-solid fa-chevron-right"></i></button>
 
     </div>
 
@@ -336,125 +359,139 @@
 
 <!-- ================= NOW PLAYING ================= -->
 
-<section id="nowplaying">
+<section id="nowplaying" class="reveal">
 
     <h2 class="section-title">
-        🎬 Now Playing
+        🎥 Now Playing
     </h2>
 
-    <div class="movie-row">
+    <div class="row-wrapper">
 
-        <% nowPlaying.forEach(movie => { %>
+        <button class="row-arrow left" aria-label="Scroll left"><i class="fa-solid fa-chevron-left"></i></button>
 
-<div class="movie-card">
+        <div class="movie-row">
 
-    <img
-        src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
-        alt="<%= movie.title %>">
+            <% nowPlaying.forEach(movie => { %>
 
-    <div class="movie-info">
+            <div class="movie-card" data-href="/movie/<%= movie.id %>">
 
-        <h3><%= movie.title %></h3>
+                <span class="card-rating">★ <%= movie.vote_average.toFixed(1) %></span>
 
-        <p>📅 <%= movie.release_date || "Coming Soon" %></p>
+                <img
+                    src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
+                    alt="<%= movie.title %>">
 
-        <div class="buttons">
+                <div class="movie-info">
 
-            <a href="/movie/<%= movie.id %>" class="details-btn">
-                <i class="fa-solid fa-circle-info"></i>
-                View Details
-            </a>
+                    <h3><%= movie.title %></h3>
 
-            <form action="/watchlist/add" method="POST">
+                    <div class="buttons">
 
-                <input type="hidden" name="movie_id" value="<%= movie.id %>">
+                        <a href="https://www.youtube.com/results?search_query=<%= encodeURIComponent(movie.title + ' official trailer') %>" target="_blank" class="details-btn">
+                            <i class="fa-solid fa-play"></i>
+                            Watch Trailer
+                        </a>
 
-                <input type="hidden" name="movie_title" value="<%= movie.title %>">
+                        <form action="/watchlist/add" method="POST">
 
-                <input type="hidden"
-                       name="poster"
-                       value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
+                            <input type="hidden" name="movie_id" value="<%= movie.id %>">
 
-                <button class="watch-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                    Watchlist
-                </button>
+                            <input type="hidden" name="movie_title" value="<%= movie.title %>">
 
-            </form>
+                            <input type="hidden"
+                                   name="poster"
+                                   value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
 
-        </div>
+                            <button class="watch-btn">
+                                <i class="fa-solid fa-bookmark"></i>
+                                Watchlist
+                            </button>
 
-    </div>
+                        </form>
 
-</div>
-
-<% }) %>
-
-</div>
-
-</section>
-
-<!-- ================= INDIAN MOVIES ================= -->
-
-<section id="indian">
-
-    <h2 class="section-title">
-        🇮🇳 Indian Movies
-    </h2>
-
-    <div class="movie-row">
-
-        <% indianMovies.forEach(movie => { %>
-
-        <div class="movie-card">
-
-            <img
-                src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
-                alt="<%= movie.title %>">
-
-            <div class="movie-info">
-
-                <h3><%= movie.title %></h3>
-
-                <p>⭐ <%= movie.vote_average.toFixed(1) %></p>
-
-                <div class="buttons">
-
-                    <a href="/movie/<%= movie.id %>" class="details-btn">
-                        <i class="fa-solid fa-circle-info"></i>
-                        View Details
-                    </a>
-
-                    <form action="/watchlist/add" method="POST">
-
-                        <input type="hidden" name="movie_id" value="<%= movie.id %>">
-
-                        <input type="hidden" name="movie_title" value="<%= movie.title %>">
-
-                        <input type="hidden"
-                               name="poster"
-                               value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
-
-                        <button class="watch-btn">
-                            <i class="fa-solid fa-bookmark"></i>
-                            Watchlist
-                        </button>
-
-                    </form>
+                    </div>
 
                 </div>
 
             </div>
 
+            <% }) %>
+
         </div>
 
-        <% }) %>
+        <button class="row-arrow right" aria-label="Scroll right"><i class="fa-solid fa-chevron-right"></i></button>
 
     </div>
 
 </section>
 
+<!-- ================= INDIAN ================= -->
 
+<section id="indian" class="reveal">
+
+    <h2 class="section-title">
+        🇮🇳 Indian Movies
+    </h2>
+
+    <div class="row-wrapper">
+
+        <button class="row-arrow left" aria-label="Scroll left"><i class="fa-solid fa-chevron-left"></i></button>
+
+        <div class="movie-row">
+
+            <% indianMovies.forEach(movie => { %>
+
+            <div class="movie-card" data-href="/movie/<%= movie.id %>">
+
+                <span class="card-rating">★ <%= movie.vote_average.toFixed(1) %></span>
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
+                    alt="<%= movie.title %>">
+
+                <div class="movie-info">
+
+                    <h3><%= movie.title %></h3>
+
+                    <div class="buttons">
+
+                        <a href="https://www.youtube.com/results?search_query=<%= encodeURIComponent(movie.title + ' official trailer') %>" target="_blank" class="details-btn">
+                            <i class="fa-solid fa-play"></i>
+                            Watch Trailer
+                        </a>
+
+                        <form action="/watchlist/add" method="POST">
+
+                            <input type="hidden" name="movie_id" value="<%= movie.id %>">
+
+                            <input type="hidden" name="movie_title" value="<%= movie.title %>">
+
+                            <input type="hidden"
+                                   name="poster"
+                                   value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
+
+                            <button class="watch-btn">
+                                <i class="fa-solid fa-bookmark"></i>
+                                Watchlist
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <% }) %>
+
+        </div>
+
+        <button class="row-arrow right" aria-label="Scroll right"><i class="fa-solid fa-chevron-right"></i></button>
+
+    </div>
+
+</section>
 
 <!-- ================= FOOTER ================= -->
 
@@ -541,6 +578,7 @@ window.addEventListener("pageshow", () => {
 });
 </script>
 
+<script src="/js/redesign.js"></script>
 <script src="/js/effects.js"></script>
 
 </body>

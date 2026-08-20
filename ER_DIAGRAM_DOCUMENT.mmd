@@ -1,0 +1,31 @@
+erDiagram
+    USER ||--o{ REVIEW : "writes"
+    USER ||--o{ WATCHLIST : "has"
+
+    USER {
+        int user_id PK
+        varchar username
+        varchar email UK
+        varchar password_hash
+        timestamp created_at
+        varchar status
+    }
+
+    REVIEW {
+        int review_id PK
+        int user_id FK
+        varchar tmdb_movie_id
+        varchar movie_title
+        int rating
+        text review_text
+        timestamp created_at
+    }
+
+    WATCHLIST {
+        int watchlist_id PK
+        int user_id FK
+        varchar tmdb_movie_id
+        varchar movie_title
+        varchar poster_path
+        timestamp added_at
+    }

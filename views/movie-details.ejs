@@ -9,6 +9,7 @@
 <title><%= movie.title %> | MovieFlix</title>
 
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/redesign.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -88,16 +89,15 @@ style="width:320px;border-radius:15px;box-shadow:0 0 25px rgba(0,0,0,.5);">
 
 <br>
 
-<% if(trailer){ %>
+<% if(movie){ %>
 
 <a
-href="<%= trailer %>"
-target="_blank"
+href="/movie/<%= movie.id %>/watch"
 class="btn-primary">
 
 <i class="fa-solid fa-play"></i>
 
-Watch Trailer
+Watch Movie
 
 </a>
 
@@ -184,7 +184,7 @@ View Details
 
 <!-- ================= REVIEWS ================= -->
 
-<section style="padding:50px 70px;">
+<section style="padding:30px 70px;" class="reviews-section">
 
 <h2 class="section-title">
 ⭐ Reviews
@@ -192,14 +192,20 @@ View Details
 
 <% if(user){ %>
 
-<form action="/reviews/add" method="POST" class="review-form">
+<button type="button" class="btn-secondary" id="toggleReview" style="padding:8px 18px;font-size:13px;margin-bottom:12px;">
+    <i class="fa-solid fa-pen"></i>
+    Write a Review
+</button>
 
+<div id="reviewFormWrap" style="display:none;">
+
+<form action="/reviews/add" method="POST" class="review-form">
 
 <input type="hidden" name="movie_id" value="<%= movie.id %>">
 
 <input type="hidden" name="movie_title" value="<%= movie.title %>">
 
-<label style="display:block;margin-bottom:15px;font-weight:600;">
+<label style="display:block;margin-bottom:6px;font-weight:600;">
     Rating
 </label>
 
@@ -219,24 +225,24 @@ name="rating"
 id="rating"
 required>
 
-<br>
-
-<label>Your Review</label>
+<label style="display:block;margin:8px 0 6px;font-weight:600;">
+    Your Review
+</label>
 
 <textarea
 name="review"
-rows="5"
+rows="2"
 required
-style="width:100%;padding:15px;border-radius:8px;resize:none;"></textarea>
+style="width:100%;padding:8px 12px;border-radius:8px;resize:none;font-size:13px;"></textarea>
 
-<br><br>
-
-<button class="btn-primary" type="submit">
+<button class="btn-primary" type="submit" style="margin-top:8px;padding:8px 18px;font-size:13px;">
     <i class="fa-solid fa-paper-plane"></i>
     Submit Review
 </button>
 
 </form>
+
+</div>
 
 <% } %>
 
@@ -298,6 +304,19 @@ style="width:100%;padding:15px;border-radius:8px;resize:none;"></textarea>
 </footer>
 
 <script>
+
+const toggleReview = document.getElementById("toggleReview");
+const reviewFormWrap = document.getElementById("reviewFormWrap");
+
+if (toggleReview && reviewFormWrap) {
+    toggleReview.addEventListener("click", () => {
+        const hidden = reviewFormWrap.style.display === "none";
+        reviewFormWrap.style.display = hidden ? "block" : "none";
+        toggleReview.innerHTML = hidden
+            ? '<i class="fa-solid fa-xmark"></i> Close Review Form'
+            : '<i class="fa-solid fa-pen"></i> Write a Review';
+    });
+}
 
 const stars = document.querySelectorAll(".star");
 const ratingInput = document.getElementById("rating");

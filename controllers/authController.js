@@ -50,7 +50,7 @@ exports.register = async (req, res) => {
 
         res.status(500).json({
             success: false,
-            message: error.message
+            message: "Server Error"
         });
 
     }
@@ -104,11 +104,15 @@ exports.login = (req, res) => {
 
         res.cookie("token", token, {
             httpOnly: true,
+            secure: process.env.NODE_ENV === "production",
+            sameSite: "strict",
             maxAge: 24 * 60 * 60 * 1000
         });
 
-        // Redirect instead of returning JSON
-        return res.redirect("/");
+        return res.json({
+            success: true,
+            message: "Login Successful"
+        });
 
     });
 
