@@ -7,7 +7,7 @@ set -u
 
 DATADIR="${HOME}/.movie-db-data"
 SOCK="${DATADIR}/mysql.sock"
-PORT=3306
+PORT=3307
 DB="movie_recommender"
 SQL="$(dirname "$0")/movie_recommender.sql"
 
@@ -37,17 +37,17 @@ echo "==> Ensuring root password is 'root'..."
 mysql --socket="$SOCK" -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED BY 'root'; FLUSH PRIVILEGES;" 2>/dev/null || true
 
 echo "==> Creating database '${DB}' and importing dump..."
-mysql -h 127.0.0.1 -u root -proot -e "CREATE DATABASE IF NOT EXISTS ${DB} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;" 2>/dev/null
+mysql --socket="$SOCK" -u root -proot -e "CREATE DATABASE IF NOT EXISTS ${DB} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;" 2>/dev/null
 
-if [ -z "$(mysql -h 127.0.0.1 -u root -proot -N -e "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='${DB}';" 2>/dev/null)" ]; then
-    mysql -h 127.0.0.1 -u root -proot "$DB" < "$SQL" 2>/dev/null
+if [ -z "$(mysql --socket="$SOCK" -u root -proot -N -e "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='${DB}';" 2>/dev/null)" ]; then
+    mysql --socket="$SOCK" -u root -proot "$DB" < "$SQL" 2>/dev/null
 fi
 
 echo "==> Ensuring extra tables (reviews, watch_history)..."
-mysql -h 127.0.0.1 -u root -proot "$DB" < "$(dirname "$0")/schema-extra.sql" 2>/dev/null
+mysql --socket="$SOCK" -u root -proot "$DB" < "$(dirname "$0")/schema-extra.sql" 2>/dev/null
 
 echo "==> Done. Users in DB:"
-mysql -h 127.0.0.1 -u root -proot -e "SELECT COUNT(*) AS users FROM ${DB}.users;" 2>/dev/null
+mysql --socket="$SOCK" -u root -proot -e "SELECT COUNT(*) AS users FROM ${DB}.users;" 2>/dev/null
 
 echo ""
 echo "Start the app with:  node app.js"
