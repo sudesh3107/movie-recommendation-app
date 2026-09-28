@@ -9,7 +9,7 @@
     <title><%= movie.title %> | MovieFlix</title>
 
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/redesign.css">
+<link rel="stylesheet" href="/css/professional.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
@@ -51,7 +51,7 @@
 
         <div class="watch-meta">
 
-            <span class="watch-badge">DEMO STREAM</span>
+            <span class="watch-badge" id="streamBadge"><%= demoSrc.url.includes('mux.dev') || demoSrc.title.includes('Demo') ? 'DEMO STREAM' : 'STREAM' %></span>
 
             <h1><%= movie.title %></h1>
 
@@ -60,10 +60,22 @@
                 <%= movie.vote_average ? '★ ' + movie.vote_average.toFixed(1) : '' %>
             </p>
 
+            <% if (typeof manifestError !== 'undefined' && manifestError) { %>
+            <p class="watch-note" style="background:#fee2e2;color:#7f1d1d;border:1px solid #fecaca;padding:8px 12px;border-radius:6px;">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Provider unavailable (<%= manifestError %>). Showing demo stream instead.
+            </p>
+            <% } else if (demoSrc.url.includes('mux.dev')) { %>
             <p class="watch-note">
                 <i class="fa-solid fa-circle-info"></i>
                 Playing a free, open-license sample film to demonstrate the player.
             </p>
+            <% } else { %>
+            <p class="watch-note" style="background:#dcfce7;color:#14532d;border:1px solid #bbf7d0;padding:8px 12px;border-radius:6px;">
+                <i class="fa-solid fa-satellite-dish"></i>
+                Live stream loaded from provider.
+            </p>
+            <% } %>
 
             <div class="watch-actions">
 
@@ -97,14 +109,19 @@
 
     <div class="player-frame">
 
-        <video id="demoPlayer" class="demo-player" controls autoplay playsinline poster="https://image.tmdb.org/t/p/w780<%= movie.backdrop_path || movie.poster_path %>">
-            <source src="<%= demoSrc.url %>" type="application/x-mpegURL">
+        <video id="demoPlayer" class="demo-player" controls autoplay playsinline poster="https://image.tmdb.org/t/p/w780<%= movie.backdrop_path || movie.poster_path %>" data-fallback-src="<%= demoSrc.fallbackUrl || '' %>">
+            <source src="<%= demoSrc.url %>" type="<%= demoSrc.url.includes('.m3u8') ? 'application/x-mpegURL' : 'video/mp4' %>">
             Your browser does not support HTML5 video.
         </video>
 
-        <p class="player-caption">
+        <div id="playerError" style="display:none;margin-top:12px;padding:12px;border-radius:8px;background:#fee2e2;color:#7f1d1d;border:1px solid #fecaca;">
+            <i class="fa-solid fa-circle-exclamation"></i> <span id="playerErrorText">Playback failed.</span>
+            <br><small>If you configured VIDEO_MANIFEST_BASE_URL, verify it returns a valid .m3u8/.mp4 URL and allows CORS. Otherwise, the demo player will try its built-in fallback.</small>
+        </div>
+
+        <p class="player-caption" id="playerCaption">
             <i class="fa-solid fa-play"></i>
-            Now playing: <strong><%= demoSrc.title %></strong> (free open-license sample)
+            Now playing: <strong><%= demoSrc.title %></strong> — <code style="font-size:0.85em;word-break:break-all" id="playerCaptionUrl"><%= demoSrc.url %></code>
         </p>
 
     </div>
@@ -130,36 +147,171 @@
 </footer>
 
 <!-- HLS player (for .m3u8 streams) -->
-<script src="https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js"></script>
+<script src="/js/hls.min.js"></script>
 <script>
 (function () {
     var video = document.getElementById("demoPlayer");
+    var errBox = document.getElementById("playerError");
+    var errText = document.getElementById("playerErrorText");
+    var captionUrl = document.getElementById("playerCaptionUrl");
+    var hls = null;
+    var usingFallback = false;
+    var networkRetries = 0;
+    var mediaRetries = 0;
+
     if (!video) return;
 
     var source = video.querySelector("source");
     if (!source) return;
 
-    var src = source.getAttribute("src");
+    var primarySrc = source.getAttribute("src") || "";
+    var fallbackSrc = video.getAttribute("data-fallback-src") || "";
 
-    var isDirectFile = /\.(mp4|webm|ogg|ogv)(\?|#|$)/i.test(src);
+    function showError(msg) {
+        if (errBox && errText) {
+            errText.textContent = msg;
+            errBox.style.display = "block";
+        }
+        console.error("[player]", msg);
+    }
 
-    if (isDirectFile) return;
+    function clearError() {
+        if (errBox) errBox.style.display = "none";
+    }
 
-    if (video.canPlayType("application/vnd.apple.mpegurl")) {
-        video.src = src;
+    function updateCaption(url) {
+        if (captionUrl) captionUrl.textContent = url;
+    }
+
+    function tryAutoplay() {
+        var playPromise = video.play();
+        if (!playPromise || !playPromise.catch) return;
+        playPromise.catch(function (err) {
+            if (err && err.name === "NotAllowedError") {
+                clearError();
+                return;
+            }
+            showError("Video is ready, but autoplay was blocked. Press play to start.");
+        });
+    }
+
+    function destroyHls() {
+        if (hls) {
+            hls.destroy();
+            hls = null;
+        }
+    }
+
+    function loadDirect(url) {
+        destroyHls();
+        video.src = url;
+        video.load();
+        tryAutoplay();
+    }
+
+    function useFallback(message) {
+        if (usingFallback) {
+            showError(message);
+            return;
+        }
+
+        if (!fallbackSrc) {
+            showError(message);
+            return;
+        }
+
+        usingFallback = true;
+        destroyHls();
+        clearError();
+        video.src = fallbackSrc;
+        video.load();
+        updateCaption(fallbackSrc);
+        tryAutoplay();
+
+        video.addEventListener("error", function onFallbackError() {
+            video.removeEventListener("error", onFallbackError);
+            showError("Playback failed on both the HLS stream and the MP4 fallback.");
+        });
+    }
+
+    function loadHls(url) {
+        if (window.Hls && Hls.isSupported()) {
+            hls = new Hls({
+                enableWorker: true,
+                lowLatencyMode: false
+            });
+
+            hls.loadSource(url);
+            hls.attachMedia(video);
+
+            hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                clearError();
+                tryAutoplay();
+            });
+
+            hls.on(Hls.Events.ERROR, function (event, data) {
+                if (!data || !data.fatal) return;
+
+                if (data.type === Hls.ErrorTypes.NETWORK_ERROR && networkRetries < 2) {
+                    networkRetries += 1;
+                    hls.startLoad();
+                    return;
+                }
+
+                if (data.type === Hls.ErrorTypes.MEDIA_ERROR && mediaRetries < 2) {
+                    mediaRetries += 1;
+                    hls.recoverMediaError();
+                    return;
+                }
+
+                destroyHls();
+                useFallback("The HLS stream could not be played in this browser.");
+            });
+
+            return;
+        }
+
+        if (video.canPlayType("application/vnd.apple.mpegurl")) {
+            video.addEventListener("loadedmetadata", function onNativeReady() {
+                video.removeEventListener("loadedmetadata", onNativeReady);
+                clearError();
+                tryAutoplay();
+            });
+
+            video.addEventListener("error", function onNativeError() {
+                video.removeEventListener("error", onNativeError);
+                useFallback("Native HLS playback failed for this stream.");
+            });
+
+            video.src = url;
+            video.load();
+            return;
+        }
+
+        useFallback("HLS playback is not supported in this browser.");
+    }
+
+    video.addEventListener("error", function () {
+        if (usingFallback) return;
+        var mediaError = video.error;
+        var detail = mediaError ? "code " + mediaError.code + " " + mediaError.message : "unknown media error";
+
+        if (fallbackSrc) {
+            useFallback("The primary video source failed (" + detail + "). Switching to the MP4 fallback.");
+            return;
+        }
+
+        showError("Video playback failed (" + detail + ").");
+    });
+
+    var isDirectFile = /\.(mp4|webm|ogg|ogv)(\?|#|$)/i.test(primarySrc);
+
+    if (isDirectFile) {
+        loadDirect(primarySrc);
         return;
     }
 
-    if (window.Hls && Hls.isSupported()) {
-        var hls = new Hls();
-        hls.loadSource(src);
-        hls.attachMedia(video);
-        hls.on(Hls.Events.MANIFEST_PARSED, function () {
-            video.play();
-        });
-    } else {
-        video.innerHTML = "HLS playback is not supported in this browser.";
-    }
+    loadHls(primarySrc);
 })();
 </script>
 

@@ -14,28 +14,6 @@
     var isTouch = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
     var body = document.body;
 
-    /* ---------- PRELOADER ---------- */
-    var preloader = document.createElement("div");
-    preloader.id = "mf-preloader";
-    preloader.innerHTML =
-        '<div class="mf-loader">' +
-        '<div class="mf-loader-ring"></div>' +
-        '<i class="mf-loader-icon fa-solid fa-film"></i>' +
-        '<h2 class="mf-loader-title">MOVIEFLIX</h2>' +
-        '<div class="mf-loader-bar"><span></span></div>' +
-        "</div>";
-    body.prepend(preloader);
-
-    var hidden = false;
-    function hidePreloader() {
-        if (hidden) return;
-        hidden = true;
-        preloader.classList.add("hide");
-        setTimeout(function () { preloader.remove(); }, 900);
-    }
-    window.addEventListener("load", hidePreloader);
-    setTimeout(hidePreloader, 3200);
-
     /* ---------- GLASSIFY INLINE-STYLED WRAPPERS (details / watchlist) ---------- */
     document.querySelectorAll("body > div[style]").forEach(function (d) {
         var st = d.getAttribute("style") || "";
@@ -160,7 +138,8 @@
     }
 
     /* ---------- ORB PARALLAX ---------- */
-    if (!reduced && !isTouch) {
+    var aurora = document.getElementById("mf-aurora");
+    if (!reduced && !isTouch && aurora) {
         var orbs = aurora.querySelectorAll(".orb");
         document.addEventListener("mousemove", function (e) {
             var x = e.clientX / window.innerWidth - 0.5;

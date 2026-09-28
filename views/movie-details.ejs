@@ -9,14 +9,13 @@
 <title><%= movie.title %> | MovieFlix</title>
 
 <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/redesign.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-<link rel="stylesheet" href="/css/effects.css">
+<link rel="stylesheet" href="/css/professional.css">
 </head>
 
 <body>
@@ -44,98 +43,82 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 </nav>
 
-<div style="padding:120px 8% 70px;display:flex;gap:50px;flex-wrap:wrap;">
+<section class="details-hero">
 
-<div>
+<div class="details-poster-wrap">
 
 <img
 src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>"
-style="width:320px;border-radius:15px;box-shadow:0 0 25px rgba(0,0,0,.5);">
+class="details-poster">
 
 </div>
 
-<div style="flex:1;min-width:320px;">
+<div class="details-content">
 
-<h1 style="font-size:48px;margin-bottom:20px;">
+<h1 class="details-title">
 <%= movie.title %>
 </h1>
 
-<p><strong>⭐ Rating:</strong> <%= movie.vote_average %> / 10</p>
+<div class="details-meta">
 
-<p><strong>📅 Release Date:</strong> <%= movie.release_date %></p>
+    <span><strong>Rating</strong> <%= movie.vote_average %> / 10</span>
 
-<p>
-<strong>🎭 Genres:</strong>
+    <span><strong>Release</strong> <%= movie.release_date %></span>
 
-<% movie.genres.forEach(function(g,index){ %>
+    <span>
+        <strong>Genres</strong>
+        <% movie.genres.forEach(function(g,index){ %>
+            <%= g.name %><%= index < movie.genres.length-1 ? "," : "" %>
+        <% }) %>
+    </span>
 
-<%= g.name %><%= index < movie.genres.length-1 ? "," : "" %>
+    <span><strong>Runtime</strong> <%= movie.runtime %> minutes</span>
 
-<% }) %>
+    <span><strong>Language</strong> <%= movie.original_language.toUpperCase() %></span>
 
-</p>
-
-<p><strong>⏱ Runtime:</strong> <%= movie.runtime %> Minutes</p>
-
-<p><strong>🌍 Language:</strong> <%= movie.original_language.toUpperCase() %></p>
-
-<br>
+</div>
 
 <h2>Story</h2>
 
-<p style="line-height:1.8;">
+<p class="overview">
 <%= movie.overview %>
 </p>
 
 <br>
 
-<% if(movie){ %>
+<div class="details-actions">
 
-<a
-href="/movie/<%= movie.id %>/watch"
-class="btn-primary">
+    <% if(movie){ %>
 
-<i class="fa-solid fa-play"></i>
+        <a href="/movie/<%= movie.id %>/watch" class="btn-primary">
+            <i class="fa-solid fa-play"></i>
+            Watch movie
+        </a>
 
-Watch Movie
+    <% } %>
 
-</a>
+    <form action="/watchlist/add" method="POST">
+        <input type="hidden" name="movie_id" value="<%= movie.id %>">
+        <input type="hidden" name="movie_title" value="<%= movie.title %>">
+        <input type="hidden" name="poster" value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
+        <button class="watch-btn" type="submit">
+            <i class="fa-solid fa-bookmark"></i>
+            Add to watchlist
+        </button>
+    </form>
 
-<% } %>
-
-<br><br>
-
-<form action="/watchlist/add" method="POST">
-
-<input type="hidden" name="movie_id" value="<%= movie.id %>">
-
-<input type="hidden" name="movie_title" value="<%= movie.title %>">
-
-<input type="hidden" name="poster" value="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>">
-
-<button class="watch-btn" type="submit">
-
-<i class="fa-solid fa-bookmark"></i>
-
-Add To Watchlist
-
-</button>
-
-</form>
-
-<br>
-
-<a href="/" class="details-btn">
-
-← Back To Home
-
-</a>
+    <a href="/" class="btn-secondary">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back home
+    </a>
 
 </div>
 
 </div>
 
-<section style="padding:40px 70px;">
+</section>
+
+<section class="similar-section">
 
 <h2 class="section-title">
 
@@ -176,15 +159,7 @@ View Details
 
 </section>
 
-<footer>
-
-<h2>MovieFlix</h2>
-
-<p>Powered by TMDb</p>
-
-<!-- ================= REVIEWS ================= -->
-
-<section style="padding:30px 70px;" class="reviews-section">
+<section class="reviews-section">
 
 <h2 class="section-title">
 ⭐ Reviews
@@ -257,7 +232,6 @@ style="width:100%;padding:8px 12px;border-radius:8px;resize:none;font-size:13px;
         <div class="review-user">
 
             <i class="fa-solid fa-circle-user"></i>
-
             <div>
                 <h4><%= review.fullname %></h4>
 
@@ -300,6 +274,12 @@ style="width:100%;padding:8px 12px;border-radius:8px;resize:none;font-size:13px;
 <% } %>
 
 </section>
+
+<footer>
+
+    <h2>MovieFlix</h2>
+
+    <p>Powered by TMDb</p>
 
 </footer>
 

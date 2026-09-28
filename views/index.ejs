@@ -9,14 +9,13 @@
     <title>MovieFlix</title>
 
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/redesign.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <link rel="stylesheet" href="/css/effects.css">
+    <link rel="stylesheet" href="/css/professional.css">
 </head>
 
 <body>
@@ -61,7 +60,7 @@
 
 <!-- ================= HERO ================= -->
 
-<section class="hero" id="hero">
+<section class="home-hero" id="hero">
 
     <!-- Dynamic backdrop slides from real trending movies -->
     <div class="hero-slides">
@@ -104,12 +103,12 @@
                 <input
                     type="text"
                     name="search"
-                    placeholder="Search Movies..."
+                    placeholder="Search by title, genre, or mood..."
                     value="<%= search %>">
 
                 <button type="submit">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    Search
+                    Search library
                 </button>
 
             </form>
@@ -117,8 +116,8 @@
             <div class="hero-buttons">
 
                 <a href="#trending" class="btn-primary">
-                    <i class="fa-solid fa-fire"></i>
-                    Explore Movies
+                    <i class="fa-solid fa-compass"></i>
+                    Explore library
                 </a>
 
                 <% if(user){ %>
@@ -179,10 +178,10 @@
 
                     <div class="buttons">
 
-                        <a href="https://www.youtube.com/results?search_query=<%= encodeURIComponent(movie.title + ' official trailer') %>" target="_blank" class="details-btn">
+                        <button type="button" class="details-btn trailer-trigger" data-movie-id="<%= movie.id %>" data-movie-title="<%= movie.title %>">
                             <i class="fa-solid fa-play"></i>
                             Watch Trailer
-                        </a>
+                        </button>
 
                         <form action="/watchlist/add" method="POST">
 
@@ -251,10 +250,10 @@
 
                     <div class="buttons">
 
-                        <a href="https://www.youtube.com/results?search_query=<%= encodeURIComponent(movie.title + ' official trailer') %>" target="_blank" class="details-btn">
+                        <button type="button" class="details-btn trailer-trigger" data-movie-id="<%= movie.id %>" data-movie-title="<%= movie.title %>">
                             <i class="fa-solid fa-play"></i>
                             Watch Trailer
-                        </a>
+                        </button>
 
                         <form action="/watchlist/add" method="POST">
 
@@ -319,10 +318,10 @@
 
                     <div class="buttons">
 
-                        <a href="https://www.youtube.com/results?search_query=<%= encodeURIComponent(movie.title + ' official trailer') %>" target="_blank" class="details-btn">
+                        <button type="button" class="details-btn trailer-trigger" data-movie-id="<%= movie.id %>" data-movie-title="<%= movie.title %>">
                             <i class="fa-solid fa-play"></i>
                             Watch Trailer
-                        </a>
+                        </button>
 
                         <form action="/watchlist/add" method="POST">
 
@@ -387,10 +386,10 @@
 
                     <div class="buttons">
 
-                        <a href="https://www.youtube.com/results?search_query=<%= encodeURIComponent(movie.title + ' official trailer') %>" target="_blank" class="details-btn">
+                        <button type="button" class="details-btn trailer-trigger" data-movie-id="<%= movie.id %>" data-movie-title="<%= movie.title %>">
                             <i class="fa-solid fa-play"></i>
                             Watch Trailer
-                        </a>
+                        </button>
 
                         <form action="/watchlist/add" method="POST">
 
@@ -455,10 +454,10 @@
 
                     <div class="buttons">
 
-                        <a href="https://www.youtube.com/results?search_query=<%= encodeURIComponent(movie.title + ' official trailer') %>" target="_blank" class="details-btn">
+                        <button type="button" class="details-btn trailer-trigger" data-movie-id="<%= movie.id %>" data-movie-title="<%= movie.title %>">
                             <i class="fa-solid fa-play"></i>
                             Watch Trailer
-                        </a>
+                        </button>
 
                         <form action="/watchlist/add" method="POST">
 
@@ -545,6 +544,53 @@
 
 </footer>
 
+<div class="trailer-modal" id="trailerModal" hidden>
+
+    <div class="trailer-modal-backdrop" data-trailer-close></div>
+
+    <div class="trailer-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="trailerModalTitle">
+
+        <div class="trailer-modal-head">
+
+            <div class="trailer-modal-copy">
+
+                <p class="trailer-modal-kicker">Trailer</p>
+
+                <h2 id="trailerModalTitle">Official trailer</h2>
+
+            </div>
+
+            <button type="button" class="trailer-modal-close" data-trailer-close aria-label="Close trailer">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <div class="trailer-modal-stage">
+
+            <p class="trailer-modal-loading" id="trailerLoading">Loading trailer...</p>
+
+            <p class="trailer-modal-error" id="trailerError" hidden>Trailer is unavailable for this movie.</p>
+
+            <iframe
+                id="trailerFrame"
+                title="Movie trailer"
+                src="about:blank"
+                hidden
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                playsinline
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</div>
+
 <!-- ================= JAVASCRIPT ================= -->
 
 <script>
@@ -580,6 +626,7 @@ window.addEventListener("pageshow", () => {
 
 <script src="/js/redesign.js"></script>
 <script src="/js/effects.js"></script>
+<script src="/js/trailer.js"></script>
 
 </body>
 

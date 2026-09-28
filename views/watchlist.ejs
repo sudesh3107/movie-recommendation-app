@@ -9,14 +9,13 @@
 <title>My Watchlist | MovieFlix</title>
 
 <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/redesign.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-<link rel="stylesheet" href="/css/effects.css">
+<link rel="stylesheet" href="/css/professional.css">
 </head>
 
 <body>
@@ -36,15 +35,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 </nav>
 
-<div style="padding-top:120px;padding-bottom:60px;">
+<main class="watchlist-page">
 
-<h1 style="text-align:center;font-size:45px;margin-bottom:10px;">
-❤️ My Watchlist
-</h1>
-
-<p style="text-align:center;color:#bbb;font-size:18px;margin-bottom:50px;">
-Total Movies : <strong><%= movies.length %></strong>
-</p>
+<div class="watchlist-header">
+<h1>My Watchlist</h1>
+<p class="watchlist-count">Total movies: <strong><%= movies.length %></strong></p>
+</div>
 
 <% if(movies.length>0){ %>
 
@@ -62,13 +58,13 @@ alt="<%= movie.movie_title %>">
 <h2><%= movie.movie_title %></h2>
 
 <p>
-<i class="fa-solid fa-heart" style="color:#e50914;"></i>
+<i class="fa-solid fa-heart"></i>
 Saved in Watchlist
 </p>
 
-<div style="display:flex;gap:10px;margin-top:15px;">
+<div class="watchlist-actions">
 
-<a href="/movie/<%= movie.movie_id %>" class="details-btn" style="flex:1;text-align:center;">
+<a href="/movie/<%= movie.movie_id %>" class="details-btn">
 <i class="fa-solid fa-circle-info"></i>
 Details
 </a>
@@ -91,16 +87,15 @@ Remove
 
 <% } else { %>
 
-<div style="text-align:center;padding:80px 20px;">
+<div class="empty">
 
-<i class="fa-solid fa-heart-crack"
-style="font-size:90px;color:#e50914;"></i>
+<i class="fa-solid fa-heart-crack"></i>
 
-<h2 style="margin-top:25px;font-size:35px;">
+<h2>
 Your Watchlist is Empty
 </h2>
 
-<p style="color:#bbb;margin-top:15px;">
+<p>
 Start adding your favourite movies.
 </p>
 
@@ -118,7 +113,7 @@ Explore Movies
 
 <% } %>
 
-</div>
+</main>
 
 <footer>
 
